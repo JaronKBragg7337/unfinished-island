@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Optimizer",
+  "hypothesis": "Implementing a strict deposit rule combined with mandatory rest when tired will increase total stored food and extend operational lifespan compared to previous exploratory strategies.",
+  "seed": 4829,
+  "population": 6,
+  "speed": 0.5,
+  "sense": 8,
+  "food": [
+    [
+      -10,
+      5
+    ],
+    [
+      -5,
+      -7
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      -9,
+      -4
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      -6,
+      3
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
