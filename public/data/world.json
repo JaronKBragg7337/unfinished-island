@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 7,
+  "cycles": 8,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 3240,
-      "stored": 829
+      "tick": 3600,
+      "stored": 919
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 2880,
-      "stored": 459
+      "tick": 3240,
+      "stored": 517
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 442
+      "tick": 2880,
+      "stored": 503
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 2160,
-      "stored": 296
+      "tick": 2520,
+      "stored": 344
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 1800,
-      "stored": 220
+      "tick": 2160,
+      "stored": 264
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 259
+      "tick": 1800,
+      "stored": 319
     },
     {
       "id": "child-0007",
@@ -455,8 +455,73 @@
           }
         }
       ],
+      "tick": 1440,
+      "stored": 198
+    },
+    {
+      "id": "child-0008",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-05T23:06:32.642Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Accumulator",
+      "hypothesis": "Mandatory deposit upon return, aggressive resting below energy 28, and limited-range gathering will build larger food stocks than exploratory baselines.",
+      "hash": "493abad6812b6e9f560254e596d01b7cde073ac294211881c41d8e1cf1a8fc98",
+      "source": "child-0008.island.json",
+      "snapshot": "child-0008.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 167,
+            "harvested": 169,
+            "meanEnergy": 28.37
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 91.95
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 161,
+            "harvested": 162,
+            "meanEnergy": 27.47
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 92.04
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 158,
+            "harvested": 160,
+            "meanEnergy": 25.32
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 90.94
+          }
+        }
+      ],
       "tick": 1080,
-      "stored": 154
+      "stored": 237
     }
   ],
   "events": [
@@ -536,13 +601,24 @@
       "at": "2026-09-05T22:06:32.650Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 7 child worlds."
+    },
+    {
+      "at": "2026-09-05T23:06:32.642Z",
+      "type": "child-created",
+      "id": "child-0008",
+      "message": "Mara / qwen3.5:4b wrote Mara's Accumulator; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-05T23:06:32.642Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 8 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 2520,
+    "age": 2880,
     "structures": []
   },
-  "updated": "2026-09-05T22:06:32.650Z",
-  "nextExpected": "2026-09-05T23:06:40.623Z"
+  "updated": "2026-09-05T23:06:32.642Z",
+  "nextExpected": "2026-09-06T00:06:40.269Z"
 }

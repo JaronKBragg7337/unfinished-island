@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Accumulator",
+  "hypothesis": "Mandatory deposit upon return, aggressive resting below energy 28, and limited-range gathering will build larger food stocks than exploratory baselines.",
+  "seed": 402,
+  "population": 6,
+  "speed": 1.2,
+  "sense": 6,
+  "food": [
+    [
+      -10,
+      5
+    ],
+    [
+      -5,
+      -9
+    ],
+    [
+      7,
+      -3
+    ],
+    [
+      -14,
+      8
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      -11,
+      -6
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
