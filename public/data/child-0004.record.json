@@ -1,0 +1,65 @@
+{
+  "id": "child-0004",
+  "parentId": "island-0001",
+  "terminalId": "island-0001/workstation-01",
+  "created": "2026-09-05T20:06:31.452Z",
+  "author": "Mara / qwen3.5:4b",
+  "assignment": "Explicitly assigned child-world experiment",
+  "name": "Mara's Efficient Forager",
+  "hypothesis": "A strict rule set prioritizing rest when tired, mandatory deposit upon returning home, and opportunistic gathering only near food patches will maximize stored reserves and mean energy compared to previous strategies.",
+  "hash": "2df94ae56be9070e934a3876e325bfe4ab5238a4786a826f21bc5f1052554934",
+  "source": "child-0004.island.json",
+  "snapshot": "child-0004.snapshot.json",
+  "results": [
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 102,
+        "harvested": 103,
+        "meanEnergy": 29.6
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 0,
+        "harvested": 12,
+        "meanEnergy": 86.63
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 101,
+        "harvested": 102,
+        "meanEnergy": 30.13
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 0,
+        "harvested": 12,
+        "meanEnergy": 87.42
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 102,
+        "harvested": 103,
+        "meanEnergy": 28.65
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 0,
+        "harvested": 12,
+        "meanEnergy": 87.47
+      }
+    }
+  ],
+  "prompt": "You are Mara, a resident at terminal island-0001/workstation-01. You are explicitly assigned to create a child simulation and improve food deposition. Write an executable declarative Island Language program, JSON only. No shell, JavaScript, markdown, or extra fields. Grammar: language=\"island/1\", name:string max70, hypothesis:string max800, seed:integer 1..1000000, population:integer 2..12, speed:number 0.3..2, sense:number 2..16, food:3..20 pairs [x,z] within -18..18, rules:1..8 {when,do}. Conditions: always,carrying,tired,foodNear. Actions: gather,deposit,rest,explore. First matching rule wins. Carrying capacity 3; deposit moves home and stores food; tired is energy<28; gather only helps with nearby food; include always fallback. Motion costs 0.8 energy/metre, rest restores4. Patches regenerate1 each30 ticks. Objective: design and explain a foraging society, then test it. Prior results: [{\"name\":\"Cyclone Cache\",\"results\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":198,\"harvested\":201,\"meanEnergy\":26.02},\"baseline\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":24,\"meanEnergy\":84.71}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":203,\"harvested\":205,\"meanEnergy\":28.55},\"baseline\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":24,\"meanEnergy\":85}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":194,\"harvested\":195,\"meanEnergy\":28.7},\"baseline\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":24,\"meanEnergy\":79.82}}],\"hypothesis\":\"Prioritizing rest reduces energy loss during the long journey back to the nest, allowing more frequent foraging cycles.\"},{\"name\":\"Mara's Optimizer\",\"results\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":121,\"harvested\":124,\"meanEnergy\":26.38},\"baseline\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":18,\"meanEnergy\":73.76}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":119,\"harvested\":124,\"meanEnergy\":25.84},\"baseline\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":18,\"meanEnergy\":73.89}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":127,\"harvested\":128,\"meanEnergy\":28.03},\"baseline\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":18,\"meanEnergy\":92.66}}],\"hypothesis\":\"Implementing a strict deposit rule combined with mandatory rest when tired will increase total stored food and extend operational lifespan compared to previous exploratory strategies.\"},{\"name\":\"Mara's Optimizer v2\",\"results\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":131,\"harvested\":133,\"meanEnergy\":26.62},\"baseline\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":18,\"meanEnergy\":83.75}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":132,\"harvested\":133,\"meanEnergy\":28.31},\"baseline\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":18,\"meanEnergy\":84.05}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":132,\"harvested\":132,\"meanEnergy\":30.13},\"baseline\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":18,\"meanEnergy\":84.11}}],\"hypothesis\":\"Aggressive rest when tired and priority deposit before further exploration will maximize total stored food and extend operational lifespan compared to previous strategies.\"}]. Example syntax: {\"language\":\"island/1\",\"name\":\"Tidal Orchard\",\"hypothesis\":\"Returning gathered food before exploring may preserve a shared stockpile.\",\"seed\":713,\"population\":5,\"speed\":0.7,\"sense\":8,\"food\":[[-8,4],[9,6],[3,-10],[-12,-8],[13,-6]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}. Create your own program.",
+  "raw": "{\"language\":\"island/1\",\"name\":\"Mara's Efficient Forager\",\"hypothesis\":\"A strict rule set prioritizing rest when tired, mandatory deposit upon returning home, and opportunistic gathering only near food patches will maximize stored reserves and mean energy compared to previous strategies.\",\"seed\":42,\"population\":4,\"speed\":0.9,\"sense\":12,\"food\":[[-5,5],[-10,-3],[7,8],[-6,-10]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}"
+}

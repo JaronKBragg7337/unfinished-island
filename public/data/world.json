@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 3,
+  "cycles": 4,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 1800,
-      "stored": 473
+      "tick": 2160,
+      "stored": 562
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 230
+      "tick": 1800,
+      "stored": 285
     },
     {
       "id": "child-0003",
@@ -195,8 +195,73 @@
           }
         }
       ],
+      "tick": 1440,
+      "stored": 258
+    },
+    {
+      "id": "child-0004",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-05T20:06:31.452Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Efficient Forager",
+      "hypothesis": "A strict rule set prioritizing rest when tired, mandatory deposit upon returning home, and opportunistic gathering only near food patches will maximize stored reserves and mean energy compared to previous strategies.",
+      "hash": "2df94ae56be9070e934a3876e325bfe4ab5238a4786a826f21bc5f1052554934",
+      "source": "child-0004.island.json",
+      "snapshot": "child-0004.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 102,
+            "harvested": 103,
+            "meanEnergy": 29.6
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 12,
+            "meanEnergy": 86.63
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 101,
+            "harvested": 102,
+            "meanEnergy": 30.13
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 12,
+            "meanEnergy": 87.42
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 102,
+            "harvested": 103,
+            "meanEnergy": 28.65
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 12,
+            "meanEnergy": 87.47
+          }
+        }
+      ],
       "tick": 1080,
-      "stored": 197
+      "stored": 151
     }
   ],
   "events": [
@@ -232,13 +297,24 @@
       "at": "2026-09-05T20:05:41.930Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 3 child worlds."
+    },
+    {
+      "at": "2026-09-05T20:06:31.452Z",
+      "type": "child-created",
+      "id": "child-0004",
+      "message": "Mara / qwen3.5:4b wrote Mara's Efficient Forager; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-05T20:06:31.452Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 4 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 1080,
+    "age": 1440,
     "structures": []
   },
-  "updated": "2026-09-05T20:05:41.930Z",
-  "nextExpected": "2026-09-05T21:05:44.834Z"
+  "updated": "2026-09-05T20:06:31.452Z",
+  "nextExpected": "2026-09-05T21:06:34.219Z"
 }

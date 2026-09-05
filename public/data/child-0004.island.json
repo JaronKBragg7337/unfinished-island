@@ -1,0 +1,45 @@
+{
+  "language": "island/1",
+  "name": "Mara's Efficient Forager",
+  "hypothesis": "A strict rule set prioritizing rest when tired, mandatory deposit upon returning home, and opportunistic gathering only near food patches will maximize stored reserves and mean energy compared to previous strategies.",
+  "seed": 42,
+  "population": 4,
+  "speed": 0.9,
+  "sense": 12,
+  "food": [
+    [
+      -5,
+      5
+    ],
+    [
+      -10,
+      -3
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      -6,
+      -10
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
