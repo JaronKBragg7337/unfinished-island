@@ -45,7 +45,7 @@ try{
  state.parent.age+=360;state.updated=now;state.nextExpected=new Date(Date.now()+3600000).toISOString();
  state.events.push({at:now,type:'world-advanced',message:`Committed 360 additional steps to ${state.children.length} child worlds.`});
  await write(path.join(data,'world.json'),state);
- execFileSync(process.execPath,['--test','tests/sim.test.mjs'],{stdio:'inherit',timeout:60000});
+ execFileSync(process.execPath,['--test','tests/sim.test.mjs','tests/records.test.mjs'],{stdio:'inherit',timeout:60000});
  if(publish){git('add','public/data');git('commit','-m',`Record island cycle ${state.cycles}: ${state.children.length} child worlds\n\nCo-Authored-By: Codex <noreply@openai.com>`);git('push','origin','main');}
  console.log(JSON.stringify({cycles:state.cycles,children:state.children.length,last:state.events.slice(-2)}));
 }finally{await lock.close();await fs.unlink('.runtime/cycle.lock');}
