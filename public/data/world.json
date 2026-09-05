@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 5,
+  "cycles": 6,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 649
+      "tick": 2880,
+      "stored": 737
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 2160,
-      "stored": 341
+      "tick": 2520,
+      "stored": 401
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 1800,
-      "stored": 321
+      "tick": 2160,
+      "stored": 382
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 200
+      "tick": 1800,
+      "stored": 247
     },
     {
       "id": "child-0005",
@@ -325,8 +325,73 @@
           }
         }
       ],
+      "tick": 1440,
+      "stored": 178
+    },
+    {
+      "id": "child-0006",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-05T21:06:32.787Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Depot Strategy",
+      "hypothesis": "Enforcing a mandatory deposit rule upon returning home, combined with immediate rest when energy drops below 28 and selective gathering only within proximity, will maximize stored food reserves and extend operational lifespan compared to baseline exploratory behaviors.",
+      "hash": "023405c95573bca5799b450ab3e6a72fa46a0d9f8605fc0cd78976c8b3470444",
+      "source": "child-0006.island.json",
+      "snapshot": "child-0006.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 136,
+            "harvested": 137,
+            "meanEnergy": 27.45
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 21,
+            "meanEnergy": 90.23
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 135,
+            "harvested": 138,
+            "meanEnergy": 27.47
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 21,
+            "meanEnergy": 89.83
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 135,
+            "harvested": 137,
+            "meanEnergy": 27.44
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 21,
+            "meanEnergy": 90.36
+          }
+        }
+      ],
       "tick": 1080,
-      "stored": 134
+      "stored": 196
     }
   ],
   "events": [
@@ -384,13 +449,24 @@
       "at": "2026-09-05T20:09:44.542Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 5 child worlds."
+    },
+    {
+      "at": "2026-09-05T21:06:32.787Z",
+      "type": "child-created",
+      "id": "child-0006",
+      "message": "Mara / qwen3.5:4b wrote Mara's Depot Strategy; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-05T21:06:32.787Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 6 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 1800,
+    "age": 2160,
     "structures": []
   },
-  "updated": "2026-09-05T20:09:44.542Z",
-  "nextExpected": "2026-09-05T21:09:47.504Z"
+  "updated": "2026-09-05T21:06:32.787Z",
+  "nextExpected": "2026-09-05T22:06:41.455Z"
 }
