@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 2,
+  "cycles": 3,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 380
+      "tick": 1800,
+      "stored": 473
     },
     {
       "id": "child-0002",
@@ -130,8 +130,73 @@
           }
         }
       ],
+      "tick": 1440,
+      "stored": 230
+    },
+    {
+      "id": "child-0003",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-05T20:05:41.930Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Optimizer v2",
+      "hypothesis": "Aggressive rest when tired and priority deposit before further exploration will maximize total stored food and extend operational lifespan compared to previous strategies.",
+      "hash": "633f51e02b6ac8e16a4cc5ccce2d32a93d8acc42aac52f78a6c69ca7be07701e",
+      "source": "child-0003.island.json",
+      "snapshot": "child-0003.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 131,
+            "harvested": 133,
+            "meanEnergy": 26.62
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 83.75
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 132,
+            "harvested": 133,
+            "meanEnergy": 28.31
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 84.05
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 132,
+            "harvested": 132,
+            "meanEnergy": 30.13
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 84.11
+          }
+        }
+      ],
       "tick": 1080,
-      "stored": 176
+      "stored": 197
     }
   ],
   "events": [
@@ -156,13 +221,24 @@
       "at": "2026-09-05T20:04:32.974Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 2 child worlds."
+    },
+    {
+      "at": "2026-09-05T20:05:41.930Z",
+      "type": "child-created",
+      "id": "child-0003",
+      "message": "Mara / qwen3.5:4b wrote Mara's Optimizer v2; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-05T20:05:41.930Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 3 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 720,
+    "age": 1080,
     "structures": []
   },
-  "updated": "2026-09-05T20:04:32.974Z",
-  "nextExpected": "2026-09-05T21:04:40.848Z"
+  "updated": "2026-09-05T20:05:41.930Z",
+  "nextExpected": "2026-09-05T21:05:44.834Z"
 }

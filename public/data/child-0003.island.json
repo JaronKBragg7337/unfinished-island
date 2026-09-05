@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Optimizer v2",
+  "hypothesis": "Aggressive rest when tired and priority deposit before further exploration will maximize total stored food and extend operational lifespan compared to previous strategies.",
+  "seed": 543,
+  "population": 6,
+  "speed": 0.9,
+  "sense": 10,
+  "food": [
+    [
+      -7,
+      5
+    ],
+    [
+      -15,
+      -3
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      -5,
+      -12
+    ],
+    [
+      14,
+      -7
+    ],
+    [
+      -10,
+      4
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
