@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Nutrient Cycle",
+  "hypothesis": "Enforcing mandatory home deposition to accumulate stockpiles, coupled with strict rest protocols upon energy depletion and opportunistic gathering only within sensor range, will significantly increase total stored reserves and mean energy levels compared to exploratory baselines.",
+  "seed": 394,
+  "population": 6,
+  "speed": 0.5,
+  "sense": 12,
+  "food": [
+    [
+      -5,
+      -7
+    ],
+    [
+      -10,
+      3
+    ],
+    [
+      4,
+      -2
+    ],
+    [
+      -8,
+      -11
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      -13,
+      -5
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
