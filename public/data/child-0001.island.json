@@ -1,0 +1,61 @@
+{
+  "language": "island/1",
+  "name": "Cyclone Cache",
+  "hypothesis": "Prioritizing rest reduces energy loss during the long journey back to the nest, allowing more frequent foraging cycles.",
+  "seed": 42891,
+  "population": 8,
+  "speed": 0.95,
+  "sense": 12,
+  "food": [
+    [
+      -5,
+      2
+    ],
+    [
+      7,
+      -3
+    ],
+    [
+      -11,
+      6
+    ],
+    [
+      4,
+      -11
+    ],
+    [
+      -14,
+      2
+    ],
+    [
+      -8,
+      -7
+    ],
+    [
+      16,
+      -4
+    ],
+    [
+      -2,
+      8
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}

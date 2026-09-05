@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "origin": "2026-09-05T19:49:43.573Z",
+  "cycles": 1,
+  "children": [
+    {
+      "id": "child-0001",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-05T19:49:43.574Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Cyclone Cache",
+      "hypothesis": "Prioritizing rest reduces energy loss during the long journey back to the nest, allowing more frequent foraging cycles.",
+      "hash": "3e55dcb3066870ad75e84d0749f42da723fb8943cfb65e7779026ef075ee9429",
+      "source": "child-0001.island.json",
+      "snapshot": "child-0001.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 198,
+            "harvested": 201,
+            "meanEnergy": 26.02
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 24,
+            "meanEnergy": 84.71
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 203,
+            "harvested": 205,
+            "meanEnergy": 28.55
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 24,
+            "meanEnergy": 85
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 194,
+            "harvested": 195,
+            "meanEnergy": 28.7
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 24,
+            "meanEnergy": 79.82
+          }
+        }
+      ],
+      "tick": 1080,
+      "stored": 289
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-09-05T19:49:43.574Z",
+      "type": "child-created",
+      "id": "child-0001",
+      "message": "Mara / qwen3.5:4b wrote Cyclone Cache; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-05T19:49:43.574Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 1 child worlds."
+    }
+  ],
+  "parent": {
+    "id": "island-0001",
+    "age": 360,
+    "structures": []
+  },
+  "updated": "2026-09-05T19:49:43.574Z",
+  "nextExpected": "2026-09-05T20:50:04.532Z"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "child-0001",
+  "parentId": "island-0001",
+  "terminalId": "island-0001/workstation-01",
+  "created": "2026-09-05T19:49:43.574Z",
+  "author": "Mara / qwen3.5:4b",
+  "assignment": "Explicitly assigned child-world experiment",
+  "name": "Cyclone Cache",
+  "hypothesis": "Prioritizing rest reduces energy loss during the long journey back to the nest, allowing more frequent foraging cycles.",
+  "hash": "3e55dcb3066870ad75e84d0749f42da723fb8943cfb65e7779026ef075ee9429",
+  "source": "child-0001.island.json",
+  "snapshot": "child-0001.snapshot.json",
+  "results": [
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 198,
+        "harvested": 201,
+        "meanEnergy": 26.02
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 0,
+        "harvested": 24,
+        "meanEnergy": 84.71
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 203,
+        "harvested": 205,
+        "meanEnergy": 28.55
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 0,
+        "harvested": 24,
+        "meanEnergy": 85
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 194,
+        "harvested": 195,
+        "meanEnergy": 28.7
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 0,
+        "harvested": 24,
+        "meanEnergy": 79.82
+      }
+    }
+  ],
+  "prompt": "You are Mara, a resident at terminal island-0001/workstation-01. You are explicitly assigned to create a child simulation and improve food deposition. Write an executable declarative Island Language program, JSON only. No shell, JavaScript, markdown, or extra fields. Grammar: language=\"island/1\", name:string max70, hypothesis:string max800, seed:integer 1..1000000, population:integer 2..12, speed:number 0.3..2, sense:number 2..16, food:3..20 pairs [x,z] within -18..18, rules:1..8 {when,do}. Conditions: always,carrying,tired,foodNear. Actions: gather,deposit,rest,explore. First matching rule wins. Carrying capacity 3; deposit moves home and stores food; tired is energy<28; gather only helps with nearby food; include always fallback. Motion costs 0.8 energy/metre, rest restores4. Patches regenerate1 each30 ticks. Objective: design and explain a foraging society, then test it. Prior results: []. Example syntax: {\"language\":\"island/1\",\"name\":\"Tidal Orchard\",\"hypothesis\":\"Returning gathered food before exploring may preserve a shared stockpile.\",\"seed\":713,\"population\":5,\"speed\":0.7,\"sense\":8,\"food\":[[-8,4],[9,6],[3,-10],[-12,-8],[13,-6]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}. Create your own program.",
+  "raw": "{\"language\":\"island/1\",\"name\":\"Cyclone Cache\",\"hypothesis\":\"Prioritizing rest reduces energy loss during the long journey back to the nest, allowing more frequent foraging cycles.\",\"seed\":42891,\"population\":8,\"speed\":0.95,\"sense\":12,\"food\":[[-5,2],[7,-3],[-11,6],[4,-11],[-14,2],[-8,-7],[16,-4],[-2,8]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}"
+}
