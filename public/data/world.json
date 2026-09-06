@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 17,
+  "cycles": 18,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 6840,
-      "stored": 1723
+      "tick": 7200,
+      "stored": 1811
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 6480,
-      "stored": 1041
+      "tick": 6840,
+      "stored": 1099
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 6120,
-      "stored": 1050
+      "tick": 6480,
+      "stored": 1109
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 5760,
-      "stored": 775
+      "tick": 6120,
+      "stored": 824
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 5400,
-      "stored": 653
+      "tick": 5760,
+      "stored": 696
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 5040,
-      "stored": 880
+      "tick": 5400,
+      "stored": 942
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 4680,
-      "stored": 631
+      "tick": 5040,
+      "stored": 679
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 4320,
-      "stored": 870
+      "tick": 4680,
+      "stored": 940
     },
     {
       "id": "child-0009",
@@ -585,8 +585,8 @@
           }
         }
       ],
-      "tick": 3960,
-      "stored": 828
+      "tick": 4320,
+      "stored": 900
     },
     {
       "id": "child-0010",
@@ -650,8 +650,8 @@
           }
         }
       ],
-      "tick": 3600,
-      "stored": 755
+      "tick": 3960,
+      "stored": 827
     },
     {
       "id": "child-0012",
@@ -715,8 +715,8 @@
           }
         }
       ],
-      "tick": 2880,
-      "stored": 280
+      "tick": 3240,
+      "stored": 316
     },
     {
       "id": "child-0013",
@@ -780,8 +780,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 591
+      "tick": 2880,
+      "stored": 674
     },
     {
       "id": "child-0014",
@@ -845,8 +845,8 @@
           }
         }
       ],
-      "tick": 2160,
-      "stored": 292
+      "tick": 2520,
+      "stored": 337
     },
     {
       "id": "child-0016",
@@ -910,8 +910,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 236
+      "tick": 1800,
+      "stored": 293
     },
     {
       "id": "child-0017",
@@ -975,8 +975,73 @@
           }
         }
       ],
+      "tick": 1440,
+      "stored": 323
+    },
+    {
+      "id": "child-0018",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-06T09:06:32.821Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Sentinel Cycle",
+      "hypothesis": "A strict protocol of mandatory deposit upon return, immediate rest below 28 energy, and proximity-only gathering will maximize stored reserves by eliminating travel waste and preventing energy depletion in a fixed population.",
+      "hash": "403f9f6971cdaba7c6d4c6f1ffb6b9193a6e9c3743aad8a131c78934e0dcc71f",
+      "source": "child-0018.island.json",
+      "snapshot": "child-0018.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 99,
+            "harvested": 100,
+            "meanEnergy": 27.76
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 72.54
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 99,
+            "harvested": 100,
+            "meanEnergy": 27.81
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 73.48
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 98,
+            "harvested": 98,
+            "meanEnergy": 27.77
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 72.66
+          }
+        }
+      ],
       "tick": 1080,
-      "stored": 248
+      "stored": 140
     }
   ],
   "events": [
@@ -1166,13 +1231,24 @@
       "at": "2026-09-06T08:06:36.840Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 15 child worlds."
+    },
+    {
+      "at": "2026-09-06T09:06:32.821Z",
+      "type": "child-created",
+      "id": "child-0018",
+      "message": "Mara / qwen3.5:4b wrote Mara's Sentinel Cycle; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-06T09:06:32.821Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 16 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 6120,
+    "age": 6480,
     "structures": []
   },
-  "updated": "2026-09-06T08:06:36.840Z",
-  "nextExpected": "2026-09-06T09:06:51.011Z"
+  "updated": "2026-09-06T09:06:32.821Z",
+  "nextExpected": "2026-09-06T10:06:41.601Z"
 }

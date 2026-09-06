@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Sentinel Cycle",
+  "hypothesis": "A strict protocol of mandatory deposit upon return, immediate rest below 28 energy, and proximity-only gathering will maximize stored reserves by eliminating travel waste and preventing energy depletion in a fixed population.",
+  "seed": 429,
+  "population": 6,
+  "speed": 0.5,
+  "sense": 12,
+  "food": [
+    [
+      -10,
+      -5
+    ],
+    [
+      8,
+      -3
+    ],
+    [
+      -4,
+      9
+    ],
+    [
+      -7,
+      14
+    ],
+    [
+      12,
+      -11
+    ],
+    [
+      5,
+      2
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
