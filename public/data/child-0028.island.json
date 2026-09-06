@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Threshold Heuristics",
+  "hypothesis": "Previous mandatory deposit and rigid rest rules caused agents to stop prematurely or fail to harvest due to poor synchronization with food patch locations; this hypothesis posits that relaxing the deposit condition to only trigger when cargo exceeds capacity by 1 unit, combined with a dynamic rest interval based on remaining steps rather than fixed ticks, will maximize trips per 720 steps while preventing energy depletion.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    }
+  ]
+}

@@ -1,45 +1,45 @@
 {
   "id": "child-0005",
-  "tick": 9000,
+  "tick": 9360,
   "rng": 1382718097,
-  "stored": 1086,
-  "harvested": 1086,
+  "stored": 1129,
+  "harvested": 1130,
   "agents": [
     {
       "id": "child-0005/resident-0",
-      "x": -2.1442172528683994,
-      "z": -0.020750924981105978,
-      "energy": 28.32574925371636,
-      "carrying": 0,
-      "target": null,
-      "action": "gather"
-    },
-    {
-      "id": "child-0005/resident-1",
-      "x": -3.9317045417979677,
-      "z": 1.484617060454368,
-      "energy": 30.09750069525037,
-      "carrying": 0,
-      "target": null,
-      "action": "gather"
-    },
-    {
-      "id": "child-0005/resident-2",
       "x": 1.3877787807814457e-16,
       "z": 6.661338147750939e-16,
-      "energy": 28.601153883549486,
+      "energy": 31.12085297281329,
       "carrying": 0,
       "target": null,
       "action": "rest"
     },
     {
-      "id": "child-0005/resident-3",
-      "x": -5.056177558872841,
-      "z": 1.8960665845773155,
-      "energy": 27.721368544137604,
+      "id": "child-0005/resident-1",
+      "x": -3.9639139868935724,
+      "z": -3.957790424797599,
+      "energy": 28.168135453778586,
+      "carrying": 1,
+      "target": null,
+      "action": "deposit"
+    },
+    {
+      "id": "child-0005/resident-2",
+      "x": -1.3556765501867887,
+      "z": -0.6376001079910089,
+      "energy": 31.480221069049353,
       "carrying": 0,
       "target": null,
       "action": "gather"
+    },
+    {
+      "id": "child-0005/resident-3",
+      "x": 1.3877787807814457e-16,
+      "z": 6.661338147750939e-16,
+      "energy": 30.04198709010576,
+      "carrying": 0,
+      "target": null,
+      "action": "rest"
     }
   ],
   "food": [
@@ -443,6 +443,21 @@
       "tick": 9000,
       "stored": 1086,
       "harvested": 1086
+    },
+    {
+      "tick": 9120,
+      "stored": 1099,
+      "harvested": 1100
+    },
+    {
+      "tick": 9240,
+      "stored": 1113,
+      "harvested": 1115
+    },
+    {
+      "tick": 9360,
+      "stored": 1129,
+      "harvested": 1130
     }
   ]
 }
