@@ -1,0 +1,148 @@
+{
+  "id": "child-0024",
+  "tick": 1080,
+  "rng": 13758493,
+  "stored": 0,
+  "harvested": 18,
+  "agents": [
+    {
+      "id": "child-0024/resident-0",
+      "x": -9,
+      "z": -2,
+      "energy": 89.74198873759916,
+      "carrying": 3,
+      "target": null,
+      "action": "gather"
+    },
+    {
+      "id": "child-0024/resident-1",
+      "x": -9,
+      "z": -2,
+      "energy": 90.7398294783314,
+      "carrying": 3,
+      "target": null,
+      "action": "gather"
+    },
+    {
+      "id": "child-0024/resident-2",
+      "x": 7,
+      "z": -5,
+      "energy": 94.90667481483524,
+      "carrying": 3,
+      "target": null,
+      "action": "gather"
+    },
+    {
+      "id": "child-0024/resident-3",
+      "x": -9,
+      "z": -2,
+      "energy": 89.99284659935265,
+      "carrying": 3,
+      "target": null,
+      "action": "gather"
+    },
+    {
+      "id": "child-0024/resident-4",
+      "x": -9,
+      "z": -2,
+      "energy": 90.08153364075724,
+      "carrying": 3,
+      "target": null,
+      "action": "gather"
+    },
+    {
+      "id": "child-0024/resident-5",
+      "x": 7,
+      "z": -5,
+      "energy": 94.82123342371003,
+      "carrying": 3,
+      "target": null,
+      "action": "gather"
+    }
+  ],
+  "food": [
+    {
+      "id": "child-0024/food-0",
+      "x": -6,
+      "z": 3,
+      "amount": 8
+    },
+    {
+      "id": "child-0024/food-1",
+      "x": 7,
+      "z": -5,
+      "amount": 8
+    },
+    {
+      "id": "child-0024/food-2",
+      "x": -3,
+      "z": 9,
+      "amount": 8
+    },
+    {
+      "id": "child-0024/food-3",
+      "x": -9,
+      "z": -2,
+      "amount": 8
+    },
+    {
+      "id": "child-0024/food-4",
+      "x": 11,
+      "z": 4,
+      "amount": 8
+    },
+    {
+      "id": "child-0024/food-5",
+      "x": -15,
+      "z": -7,
+      "amount": 8
+    }
+  ],
+  "events": [
+    {
+      "tick": 120,
+      "stored": 0,
+      "harvested": 18
+    },
+    {
+      "tick": 240,
+      "stored": 0,
+      "harvested": 18
+    },
+    {
+      "tick": 360,
+      "stored": 0,
+      "harvested": 18
+    },
+    {
+      "tick": 480,
+      "stored": 0,
+      "harvested": 18
+    },
+    {
+      "tick": 600,
+      "stored": 0,
+      "harvested": 18
+    },
+    {
+      "tick": 720,
+      "stored": 0,
+      "harvested": 18
+    },
+    {
+      "tick": 840,
+      "stored": 0,
+      "harvested": 18
+    },
+    {
+      "tick": 960,
+      "stored": 0,
+      "harvested": 18
+    },
+    {
+      "tick": 1080,
+      "stored": 0,
+      "harvested": 18
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Optimized Forager",
+  "hypothesis": "The parent hypothesis assumes mandatory deposit increases yield, but ignores that carrying costs (0.8/m) and rest intervals may cause missed opportunities if not perfectly synchronized with return times; adding explicit energy-based stop conditions before gathering to prevent depletion while maintaining the deposit discipline.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
