@@ -1,0 +1,49 @@
+{
+  "language": "island/1",
+  "name": "Cached Forager v3",
+  "hypothesis": "The previous mandatory deposit rules cause agents to carry empty loads or rest prematurely due to rigid synchronization; adding a 'carrying' condition specifically to trigger 'deposit' only when cargo is full prevents unnecessary stops at non-full locations, allowing faster travel between food patches while still ensuring all harvested items are stored upon arrival.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    }
+  ]
+}
