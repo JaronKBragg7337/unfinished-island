@@ -1,0 +1,49 @@
+{
+  "language": "island/1",
+  "name": "Mara's Opti-Forage",
+  "hypothesis": "A unified strategy of immediate deposit upon return, energy-based rest below 28, and proximity-only gathering maximizes stored food and lifespan by minimizing travel waste while ensuring resource accumulation.",
+  "seed": 647,
+  "population": 5,
+  "speed": 0.9,
+  "sense": 12,
+  "food": [
+    [
+      -5,
+      -3
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      -9,
+      2
+    ],
+    [
+      2,
+      -11
+    ],
+    [
+      0,
+      15
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}

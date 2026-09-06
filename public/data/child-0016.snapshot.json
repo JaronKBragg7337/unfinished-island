@@ -1,0 +1,148 @@
+{
+  "id": "child-0016",
+  "tick": 1080,
+  "rng": 2971958693,
+  "stored": 180,
+  "harvested": 182,
+  "agents": [
+    {
+      "id": "child-0016/resident-0",
+      "x": 1.4930255048531864,
+      "z": -7.310397883663601,
+      "energy": 29.45251988287921,
+      "carrying": 0,
+      "target": {
+        "x": 5.3765551736578345,
+        "z": 6.526743883732706
+      },
+      "action": "gather"
+    },
+    {
+      "id": "child-0016/resident-1",
+      "x": 0.712024844960121,
+      "z": -3.9161366472806662,
+      "energy": 21.581180478334815,
+      "carrying": 1,
+      "target": {
+        "x": 2.3121420796960592,
+        "z": -3.6784828403033316
+      },
+      "action": "deposit"
+    },
+    {
+      "id": "child-0016/resident-2",
+      "x": 0.6972978123393758,
+      "z": 13.817847942833108,
+      "energy": 28.654800858233816,
+      "carrying": 0,
+      "target": {
+        "x": -4.854520929977298,
+        "z": 10.575340615119785
+      },
+      "action": "gather"
+    },
+    {
+      "id": "child-0016/resident-3",
+      "x": 0.2897307917626598,
+      "z": 0.33245792784928196,
+      "energy": 22.959560156339602,
+      "carrying": 1,
+      "target": {
+        "x": 4.863693336956203,
+        "z": 7.1780081004835665
+      },
+      "action": "deposit"
+    },
+    {
+      "id": "child-0016/resident-4",
+      "x": 0.7729490288492574,
+      "z": 12.622830285955008,
+      "energy": 30.75372825040416,
+      "carrying": 0,
+      "target": {
+        "x": 7.959768485277891,
+        "z": -14.335731741506606
+      },
+      "action": "gather"
+    }
+  ],
+  "food": [
+    {
+      "id": "child-0016/food-0",
+      "x": -5,
+      "z": -3,
+      "amount": 1
+    },
+    {
+      "id": "child-0016/food-1",
+      "x": 7,
+      "z": 8,
+      "amount": 1
+    },
+    {
+      "id": "child-0016/food-2",
+      "x": -9,
+      "z": 2,
+      "amount": 1
+    },
+    {
+      "id": "child-0016/food-3",
+      "x": 2,
+      "z": -11,
+      "amount": 4
+    },
+    {
+      "id": "child-0016/food-4",
+      "x": 0,
+      "z": 15,
+      "amount": 8
+    }
+  ],
+  "events": [
+    {
+      "tick": 120,
+      "stored": 26,
+      "harvested": 27
+    },
+    {
+      "tick": 240,
+      "stored": 48,
+      "harvested": 48
+    },
+    {
+      "tick": 360,
+      "stored": 68,
+      "harvested": 68
+    },
+    {
+      "tick": 480,
+      "stored": 87,
+      "harvested": 87
+    },
+    {
+      "tick": 600,
+      "stored": 104,
+      "harvested": 106
+    },
+    {
+      "tick": 720,
+      "stored": 124,
+      "harvested": 125
+    },
+    {
+      "tick": 840,
+      "stored": 142,
+      "harvested": 145
+    },
+    {
+      "tick": 960,
+      "stored": 162,
+      "harvested": 163
+    },
+    {
+      "tick": 1080,
+      "stored": 180,
+      "harvested": 182
+    }
+  ]
+}
