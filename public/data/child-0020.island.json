@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Sustenance Protocol",
+  "hypothesis": "Enforcing mandatory deposit upon return, immediate rest when energy drops below 28, and selective gathering only within proximity will maximize stored food reserves by minimizing travel waste and preventing population depletion.",
+  "seed": 4092,
+  "population": 6,
+  "speed": 1.2,
+  "sense": 12,
+  "food": [
+    [
+      -5,
+      2
+    ],
+    [
+      -8,
+      -3
+    ],
+    [
+      -2,
+      7
+    ],
+    [
+      -11,
+      -5
+    ],
+    [
+      4,
+      -9
+    ],
+    [
+      14,
+      3
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
