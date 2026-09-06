@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 26,
+  "cycles": 27,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 10080,
-      "stored": 2522
+      "tick": 10440,
+      "stored": 2610
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 9720,
-      "stored": 1565
+      "tick": 10080,
+      "stored": 1625
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 9360,
-      "stored": 1610
+      "tick": 9720,
+      "stored": 1671
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 9000,
-      "stored": 1213
+      "tick": 9360,
+      "stored": 1260
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 8640,
-      "stored": 1042
+      "tick": 9000,
+      "stored": 1086
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 8280,
-      "stored": 1444
+      "tick": 8640,
+      "stored": 1506
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 7920,
-      "stored": 1051
+      "tick": 8280,
+      "stored": 1098
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 7560,
-      "stored": 1519
+      "tick": 7920,
+      "stored": 1591
     },
     {
       "id": "child-0009",
@@ -585,8 +585,8 @@
           }
         }
       ],
-      "tick": 7200,
-      "stored": 1476
+      "tick": 7560,
+      "stored": 1548
     },
     {
       "id": "child-0010",
@@ -650,8 +650,8 @@
           }
         }
       ],
-      "tick": 6840,
-      "stored": 1403
+      "tick": 7200,
+      "stored": 1475
     },
     {
       "id": "child-0012",
@@ -715,8 +715,8 @@
           }
         }
       ],
-      "tick": 6120,
-      "stored": 604
+      "tick": 6480,
+      "stored": 640
     },
     {
       "id": "child-0013",
@@ -780,8 +780,8 @@
           }
         }
       ],
-      "tick": 5760,
-      "stored": 1326
+      "tick": 6120,
+      "stored": 1409
     },
     {
       "id": "child-0014",
@@ -845,8 +845,8 @@
           }
         }
       ],
-      "tick": 5400,
-      "stored": 725
+      "tick": 5760,
+      "stored": 767
     },
     {
       "id": "child-0016",
@@ -910,8 +910,8 @@
           }
         }
       ],
-      "tick": 4680,
-      "stored": 747
+      "tick": 5040,
+      "stored": 805
     },
     {
       "id": "child-0017",
@@ -975,8 +975,8 @@
           }
         }
       ],
-      "tick": 4320,
-      "stored": 896
+      "tick": 4680,
+      "stored": 967
     },
     {
       "id": "child-0018",
@@ -1040,8 +1040,8 @@
           }
         }
       ],
-      "tick": 3960,
-      "stored": 474
+      "tick": 4320,
+      "stored": 519
     },
     {
       "id": "child-0019",
@@ -1105,8 +1105,8 @@
           }
         }
       ],
-      "tick": 3600,
-      "stored": 737
+      "tick": 3960,
+      "stored": 810
     },
     {
       "id": "child-0020",
@@ -1170,8 +1170,8 @@
           }
         }
       ],
-      "tick": 3240,
-      "stored": 679
+      "tick": 3600,
+      "stored": 751
     },
     {
       "id": "child-0021",
@@ -1235,8 +1235,8 @@
           }
         }
       ],
-      "tick": 2880,
-      "stored": 518
+      "tick": 3240,
+      "stored": 581
     },
     {
       "id": "child-0022",
@@ -1300,8 +1300,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 376
+      "tick": 2880,
+      "stored": 429
     },
     {
       "id": "child-0023",
@@ -1365,8 +1365,8 @@
           }
         }
       ],
-      "tick": 2160,
-      "stored": 451
+      "tick": 2520,
+      "stored": 522
     },
     {
       "revision": {
@@ -1537,7 +1537,7 @@
           }
         }
       ],
-      "tick": 1800,
+      "tick": 2160,
       "stored": 0
     },
     {
@@ -1709,7 +1709,7 @@
           }
         }
       ],
-      "tick": 1440,
+      "tick": 1800,
       "stored": 0
     },
     {
@@ -1831,6 +1831,178 @@
       "hash": "5fce2290f291d9f8c3c04c2ac4a829b1342f046a0240c38895eb07b0578300e2",
       "source": "child-0026.island.json",
       "snapshot": "child-0026.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 0,
+            "meanEnergy": 1.56
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 91.67
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 0,
+            "meanEnergy": 1.41
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 91.05
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 0,
+            "meanEnergy": 1.41
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 84.23
+          }
+        }
+      ],
+      "tick": 1440,
+      "stored": 0
+    },
+    {
+      "revision": {
+        "of": "child-0023",
+        "training": [
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 17,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.56
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 17,
+              "stored": 165,
+              "harvested": 166,
+              "meanEnergy": 28.48
+            }
+          },
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 83,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.41
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 83,
+              "stored": 161,
+              "harvested": 162,
+              "meanEnergy": 28.94
+            }
+          },
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 211,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.41
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 211,
+              "stored": 162,
+              "harvested": 163,
+              "meanEnergy": 29.59
+            }
+          }
+        ],
+        "holdout": [
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 401,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.41
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 401,
+              "stored": 165,
+              "harvested": 166,
+              "meanEnergy": 28.94
+            }
+          },
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 809,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.41
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 809,
+              "stored": 157,
+              "harvested": 158,
+              "meanEnergy": 29.21
+            }
+          },
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 1543,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.27
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 1543,
+              "stored": 163,
+              "harvested": 163,
+              "meanEnergy": 29.25
+            }
+          }
+        ],
+        "trainingDelta": -488,
+        "holdoutDelta": -485,
+        "adopted": false,
+        "reason": "Previous policy retained: requires improvement in both groups and no holdout regression."
+      },
+      "id": "child-0027",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-06T17:06:32.794Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Strategic Storage",
+      "hypothesis": "Previous attempts failed because mandatory deposit rules forced agents to stop at non-full locations (causing zero harvests) or triggered premature resting due to rigid timing. The new policy combines the successful 'always deposit' momentum of child-0024 with an energy-based threshold for gathering, allowing full loads to be carried without stopping unless energy is critically low (<28), which prevents depletion while maximizing trips per 720 steps.",
+      "hash": "e922336c7900a89dd4ba16d1c5d2bf27ca98dc56d5d71f44b0ac803588353d78",
+      "source": "child-0027.island.json",
+      "snapshot": "child-0027.snapshot.json",
       "results": [
         {
           "candidate": {
@@ -2189,14 +2361,31 @@
       "at": "2026-09-06T16:06:32.845Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 24 child worlds."
+    },
+    {
+      "at": "2026-09-06T17:06:32.794Z",
+      "type": "policy-evaluated",
+      "id": "child-0027",
+      "message": "Revision of child-0023: previous policy retained; training food delta -488, holdout delta -485."
+    },
+    {
+      "at": "2026-09-06T17:06:32.794Z",
+      "type": "child-created",
+      "id": "child-0027",
+      "message": "Mara / qwen3.5:4b wrote Mara's Strategic Storage; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-06T17:06:32.794Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 25 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 9360,
+    "age": 9720,
     "structures": []
   },
-  "updated": "2026-09-06T16:06:32.845Z",
-  "nextExpected": "2026-09-06T17:06:41.606Z",
+  "updated": "2026-09-06T17:06:32.794Z",
+  "nextExpected": "2026-09-06T18:06:43.260Z",
   "policyChampionId": "child-0023"
 }
