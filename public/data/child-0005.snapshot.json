@@ -1,45 +1,45 @@
 {
   "id": "child-0005",
-  "tick": 10440,
+  "tick": 10800,
   "rng": 1382718097,
-  "stored": 1259,
-  "harvested": 1259,
+  "stored": 1302,
+  "harvested": 1303,
   "agents": [
     {
       "id": "child-0005/resident-0",
-      "x": -3.9325825457899874,
-      "z": 1.4747184546712455,
-      "energy": 29.71346054092072,
+      "x": 1.3965871599604325,
+      "z": 6.4704343080946085,
+      "energy": 27.877090471258466,
       "carrying": 0,
       "target": null,
       "action": "gather"
     },
     {
       "id": "child-0005/resident-1",
-      "x": 0,
-      "z": 0,
-      "energy": 31.63439767105379,
+      "x": 0.670244966568224,
+      "z": 3.350581374161134,
+      "energy": 29.673983965811644,
       "carrying": 0,
       "target": null,
-      "action": "rest"
+      "action": "gather"
     },
     {
       "id": "child-0005/resident-2",
-      "x": -3.9317045417979677,
-      "z": 1.484617060454368,
-      "energy": 29.90264288893941,
+      "x": 0.8972634412925369,
+      "z": 4.107046942945612,
+      "energy": 27.771871047972255,
       "carrying": 0,
       "target": null,
       "action": "gather"
     },
     {
       "id": "child-0005/resident-3",
-      "x": -0.9508509713469189,
-      "z": -0.24609436819755062,
-      "energy": 29.150323740262568,
-      "carrying": 0,
+      "x": -5.135912823051389,
+      "z": -1.0784592691333015,
+      "energy": 27.123031820682513,
+      "carrying": 1,
       "target": null,
-      "action": "gather"
+      "action": "deposit"
     }
   ],
   "food": [
@@ -53,7 +53,7 @@
       "id": "child-0005/food-1",
       "x": -8,
       "z": 3,
-      "amount": 2
+      "amount": 1
     },
     {
       "id": "child-0005/food-2",
@@ -503,6 +503,21 @@
       "tick": 10440,
       "stored": 1259,
       "harvested": 1259
+    },
+    {
+      "tick": 10560,
+      "stored": 1272,
+      "harvested": 1274
+    },
+    {
+      "tick": 10680,
+      "stored": 1287,
+      "harvested": 1288
+    },
+    {
+      "tick": 10800,
+      "stored": 1302,
+      "harvested": 1303
     }
   ]
 }

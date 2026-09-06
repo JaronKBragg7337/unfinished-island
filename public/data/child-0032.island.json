@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Batch Foraging",
+  "hypothesis": "Previous attempts failed because agents deposited food immediately after gathering a single item (cargo=1), failing to utilize their capacity of 3. This led to excessive travel distance and energy expenditure, resulting in zero stored food for the agent population. By restricting the mandatory 'deposit' action to only trigger when the cargo count reaches exactly 2 (allowing one final item before full capacity is hit, ensuring a load of 3 upon departure), agents will maximize harvests per trip. Combined with the existing energy-based rest logic, this strategy optimizes movement efficiency and stored food accumulation.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    }
+  ]
+}
