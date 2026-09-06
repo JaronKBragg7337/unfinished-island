@@ -1,72 +1,72 @@
 {
   "id": "child-0006",
-  "tick": 2160,
+  "tick": 2520,
   "rng": 367175607,
-  "stored": 381,
-  "harvested": 384,
+  "stored": 446,
+  "harvested": 446,
   "agents": [
     {
       "id": "child-0006/resident-0",
-      "x": -1.6173219249779829,
-      "z": 1.46556671594738,
-      "energy": 29.572614907698636,
+      "x": 3.0701870526618715,
+      "z": 6.6221078035125425,
+      "energy": 30.913547560458465,
       "carrying": 0,
       "target": null,
       "action": "gather"
     },
     {
       "id": "child-0006/resident-1",
-      "x": -3.7512046467894375,
-      "z": -2.083565108149471,
-      "energy": 24.699572512029455,
-      "carrying": 1,
+      "x": -0.012789308552604017,
+      "z": 0.6984748287707006,
+      "energy": 30.444010368592263,
+      "carrying": 0,
       "target": null,
-      "action": "deposit"
+      "action": "gather"
     },
     {
       "id": "child-0006/resident-2",
-      "x": 3.400654947369098,
-      "z": 4.216056098243019,
-      "energy": 29.368877602390356,
+      "x": 3.118462313851928,
+      "z": 6.262091092476349,
+      "energy": 30.65784000539679,
       "carrying": 0,
       "target": null,
       "action": "gather"
     },
     {
       "id": "child-0006/resident-3",
-      "x": 4.806116640998029,
-      "z": 6.562694198322343,
-      "energy": 29.19367802551758,
+      "x": 0.379136795301775,
+      "z": 1.4850260714894754,
+      "energy": 30.647193309027866,
       "carrying": 0,
       "target": null,
       "action": "gather"
     },
     {
       "id": "child-0006/resident-4",
-      "x": -2.443443470217148,
-      "z": -1.3574328548805181,
-      "energy": 24.782345688828862,
-      "carrying": 1,
+      "x": -0.4002174020511561,
+      "z": 0.34910840163180895,
+      "energy": 30.61393013643734,
+      "carrying": 0,
       "target": null,
-      "action": "deposit"
+      "action": "gather"
     },
     {
       "id": "child-0006/resident-5",
-      "x": -1.9561317199199175,
-      "z": -0.7440892028609054,
-      "energy": 29.37115115417026,
+      "x": 2.161859439205549,
+      "z": 4.167480725347564,
+      "energy": 30.65844291398818,
       "carrying": 0,
       "target": null,
       "action": "gather"
     },
     {
       "id": "child-0006/resident-6",
-      "x": 2.881966011250104,
-      "z": 5.763932022500208,
-      "energy": 28.915260161378434,
-      "carrying": 1,
+      "x": 0.6570462878255018,
+      "z": 1.940289202902068,
+      "energy": 30.354420723593357,
+      "carrying": 0,
       "target": null,
-      "action": "deposit"
+      "action": "gather"
     }
   ],
   "food": [
@@ -80,13 +80,13 @@
       "id": "child-0006/food-1",
       "x": -9,
       "z": -5,
-      "amount": 7
+      "amount": 6
     },
     {
       "id": "child-0006/food-2",
       "x": 4,
       "z": 8,
-      "amount": 1
+      "amount": 2
     },
     {
       "id": "child-0006/food-3",
@@ -116,7 +116,7 @@
       "id": "child-0006/food-7",
       "x": -10,
       "z": 4,
-      "amount": 5
+      "amount": 6
     }
   ],
   "events": [
@@ -209,6 +209,21 @@
       "tick": 2160,
       "stored": 381,
       "harvested": 384
+    },
+    {
+      "tick": 2280,
+      "stored": 403,
+      "harvested": 405
+    },
+    {
+      "tick": 2400,
+      "stored": 423,
+      "harvested": 426
+    },
+    {
+      "tick": 2520,
+      "stored": 446,
+      "harvested": 446
     }
   ]
 }

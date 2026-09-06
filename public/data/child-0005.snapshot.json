@@ -1,42 +1,42 @@
 {
   "id": "child-0005",
-  "tick": 2520,
+  "tick": 2880,
   "rng": 1382718097,
-  "stored": 307,
-  "harvested": 308,
+  "stored": 350,
+  "harvested": 352,
   "agents": [
     {
       "id": "child-0005/resident-0",
-      "x": 0.5206330987647745,
-      "z": 2.342848944441487,
-      "energy": 27.75813081971714,
-      "carrying": 0,
-      "target": null,
-      "action": "gather"
-    },
-    {
-      "id": "child-0005/resident-1",
-      "x": 0.10977826290421877,
-      "z": 2.5147977564881683,
-      "energy": 28.244717250465094,
-      "carrying": 0,
-      "target": null,
-      "action": "gather"
-    },
-    {
-      "id": "child-0005/resident-2",
-      "x": -5.617975065414268,
-      "z": 2.1067406495303507,
-      "energy": 28.991648762991726,
+      "x": -5.293212756683587,
+      "z": -1.0586425513367175,
+      "energy": 25.507582556038894,
       "carrying": 1,
       "target": null,
       "action": "deposit"
     },
     {
+      "id": "child-0005/resident-1",
+      "x": -4.704864351269036,
+      "z": -0.940972870253807,
+      "energy": 26.38811013527166,
+      "carrying": 1,
+      "target": null,
+      "action": "deposit"
+    },
+    {
+      "id": "child-0005/resident-2",
+      "x": -1.4725771407456842,
+      "z": -0.06672099898032424,
+      "energy": 31.38149751099842,
+      "carrying": 0,
+      "target": null,
+      "action": "gather"
+    },
+    {
       "id": "child-0005/resident-3",
-      "x": -8.107902726296027,
-      "z": 1.1789898926515476,
-      "energy": 27.968653173792035,
+      "x": -4.05471019654294,
+      "z": 1.4126227017714423,
+      "energy": 29.96057366392478,
       "carrying": 0,
       "target": null,
       "action": "gather"
@@ -53,19 +53,19 @@
       "id": "child-0005/food-1",
       "x": -8,
       "z": 3,
-      "amount": 1
+      "amount": 2
     },
     {
       "id": "child-0005/food-2",
       "x": 2,
       "z": 9,
-      "amount": 8
+      "amount": 7
     },
     {
       "id": "child-0005/food-3",
       "x": -10,
       "z": -2,
-      "amount": 8
+      "amount": 7
     }
   ],
   "events": [
@@ -173,6 +173,21 @@
       "tick": 2520,
       "stored": 307,
       "harvested": 308
+    },
+    {
+      "tick": 2640,
+      "stored": 322,
+      "harvested": 322
+    },
+    {
+      "tick": 2760,
+      "stored": 335,
+      "harvested": 337
+    },
+    {
+      "tick": 2880,
+      "stored": 350,
+      "harvested": 352
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 9,
+  "cycles": 10,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 3960,
-      "stored": 1009
+      "tick": 4320,
+      "stored": 1099
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 3600,
-      "stored": 572
+      "tick": 3960,
+      "stored": 630
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 3240,
-      "stored": 564
+      "tick": 3600,
+      "stored": 626
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 2880,
-      "stored": 391
+      "tick": 3240,
+      "stored": 441
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 307
+      "tick": 2880,
+      "stored": 350
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 2160,
-      "stored": 381
+      "tick": 2520,
+      "stored": 446
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 1800,
-      "stored": 243
+      "tick": 2160,
+      "stored": 292
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 311
+      "tick": 1800,
+      "stored": 383
     },
     {
       "id": "child-0009",
@@ -585,8 +585,73 @@
           }
         }
       ],
+      "tick": 1440,
+      "stored": 324
+    },
+    {
+      "id": "child-0010",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-06T01:06:34.719Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Depot Strategy",
+      "hypothesis": "Enforcing mandatory deposit upon return combined with immediate rest when energy drops below 28 and selective gathering only within proximity will maximize stored food reserves and extend operational lifespan compared to exploratory baselines.",
+      "hash": "926c2c3b34a78772881baa8203aca56711e94ab5778f05a848ba4d3915c91fdd",
+      "source": "child-0010.island.json",
+      "snapshot": "child-0010.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 178,
+            "harvested": 178,
+            "meanEnergy": 29.62
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 92.9
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 179,
+            "harvested": 179,
+            "meanEnergy": 28.83
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 93.52
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 177,
+            "harvested": 178,
+            "meanEnergy": 29.84
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 93.35
+          }
+        }
+      ],
       "tick": 1080,
-      "stored": 252
+      "stored": 251
     }
   ],
   "events": [
@@ -688,13 +753,24 @@
       "at": "2026-09-06T00:06:32.815Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 9 child worlds."
+    },
+    {
+      "at": "2026-09-06T01:06:34.719Z",
+      "type": "child-created",
+      "id": "child-0010",
+      "message": "Mara / qwen3.5:4b wrote Mara's Depot Strategy; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-06T01:06:34.719Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 10 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 3240,
+    "age": 3600,
     "structures": []
   },
-  "updated": "2026-09-06T00:06:32.815Z",
-  "nextExpected": "2026-09-06T01:06:40.695Z"
+  "updated": "2026-09-06T01:06:34.719Z",
+  "nextExpected": "2026-09-06T02:06:48.988Z"
 }
