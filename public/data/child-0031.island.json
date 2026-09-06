@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Efficient Rest-Deposit",
+  "hypothesis": "Previous attempts failed because mandatory deposit rules caused agents to stop immediately after gathering one item, preventing full capacity utilization (cargo=1 instead of 3). By changing the 'carrying' condition to only trigger when cargo exceeds half capacity (cargo>1), agents will carry multiple harvests per trip. Combined with a fixed rest interval, this should maximize trips per 720 steps and stored food.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    }
+  ]
+}
