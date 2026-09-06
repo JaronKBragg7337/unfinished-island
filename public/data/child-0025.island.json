@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Cache Optimization",
+  "hypothesis": "Introducing a mandatory rest step before gathering when carrying cargo will prevent energy depletion during harvest attempts; this forces earlier deposition and stabilizes energy levels, ensuring consistent food accumulation over 720 steps compared to the baseline.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "rest"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "deposit"
+    }
+  ]
+}
