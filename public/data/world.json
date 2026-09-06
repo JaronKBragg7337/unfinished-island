@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 18,
+  "cycles": 19,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 7200,
-      "stored": 1811
+      "tick": 7560,
+      "stored": 1900
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 6840,
-      "stored": 1099
+      "tick": 7200,
+      "stored": 1158
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 6480,
-      "stored": 1109
+      "tick": 6840,
+      "stored": 1172
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 6120,
-      "stored": 824
+      "tick": 6480,
+      "stored": 873
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 5760,
-      "stored": 696
+      "tick": 6120,
+      "stored": 741
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 5400,
-      "stored": 942
+      "tick": 5760,
+      "stored": 1002
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 5040,
-      "stored": 679
+      "tick": 5400,
+      "stored": 724
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 4680,
-      "stored": 940
+      "tick": 5040,
+      "stored": 1014
     },
     {
       "id": "child-0009",
@@ -585,8 +585,8 @@
           }
         }
       ],
-      "tick": 4320,
-      "stored": 900
+      "tick": 4680,
+      "stored": 972
     },
     {
       "id": "child-0010",
@@ -650,8 +650,8 @@
           }
         }
       ],
-      "tick": 3960,
-      "stored": 827
+      "tick": 4320,
+      "stored": 899
     },
     {
       "id": "child-0012",
@@ -715,8 +715,8 @@
           }
         }
       ],
-      "tick": 3240,
-      "stored": 316
+      "tick": 3600,
+      "stored": 352
     },
     {
       "id": "child-0013",
@@ -780,8 +780,8 @@
           }
         }
       ],
-      "tick": 2880,
-      "stored": 674
+      "tick": 3240,
+      "stored": 753
     },
     {
       "id": "child-0014",
@@ -845,8 +845,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 337
+      "tick": 2880,
+      "stored": 384
     },
     {
       "id": "child-0016",
@@ -910,8 +910,8 @@
           }
         }
       ],
-      "tick": 1800,
-      "stored": 293
+      "tick": 2160,
+      "stored": 349
     },
     {
       "id": "child-0017",
@@ -975,8 +975,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 323
+      "tick": 1800,
+      "stored": 394
     },
     {
       "id": "child-0018",
@@ -1040,8 +1040,73 @@
           }
         }
       ],
+      "tick": 1440,
+      "stored": 181
+    },
+    {
+      "id": "child-0019",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-06T10:06:33.013Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Depot Strategy",
+      "hypothesis": "Enforcing mandatory deposit upon return combined with immediate rest when energy drops below 28 and selective gathering only within proximity will maximize stored food reserves and extend operational lifespan compared to exploratory baselines.",
+      "hash": "85d4a8e64287d0db9cbaa3f407323c55e59a12a98eafa13e4605175243ba5883",
+      "source": "child-0019.island.json",
+      "snapshot": "child-0019.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 152,
+            "harvested": 152,
+            "meanEnergy": 29.86
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 74.21
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 162,
+            "harvested": 162,
+            "meanEnergy": 29.24
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 91.48
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 162,
+            "harvested": 165,
+            "meanEnergy": 26.51
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 91.39
+          }
+        }
+      ],
       "tick": 1080,
-      "stored": 140
+      "stored": 230
     }
   ],
   "events": [
@@ -1242,13 +1307,24 @@
       "at": "2026-09-06T09:06:32.821Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 16 child worlds."
+    },
+    {
+      "at": "2026-09-06T10:06:33.013Z",
+      "type": "child-created",
+      "id": "child-0019",
+      "message": "Mara / qwen3.5:4b wrote Mara's Depot Strategy; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-06T10:06:33.013Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 17 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 6480,
+    "age": 6840,
     "structures": []
   },
-  "updated": "2026-09-06T09:06:32.821Z",
-  "nextExpected": "2026-09-06T10:06:41.601Z"
+  "updated": "2026-09-06T10:06:33.013Z",
+  "nextExpected": "2026-09-06T11:06:42.263Z"
 }

@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Depot Strategy",
+  "hypothesis": "Enforcing mandatory deposit upon return combined with immediate rest when energy drops below 28 and selective gathering only within proximity will maximize stored food reserves and extend operational lifespan compared to exploratory baselines.",
+  "seed": 4097,
+  "population": 6,
+  "speed": 1.2,
+  "sense": 10,
+  "food": [
+    [
+      -5,
+      -5
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      -9,
+      -8
+    ],
+    [
+      4,
+      12
+    ],
+    [
+      -15,
+      6
+    ],
+    [
+      10,
+      -12
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
