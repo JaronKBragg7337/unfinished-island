@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Stacked Harvest",
+  "hypothesis": "The previous 'carrying' deposit rule caused agents to stop immediately after gathering one item, preventing full capacity utilization and increasing travel costs. By delaying the mandatory deposit until cargo reaches exactly 3 units (capacity), agents will carry multiple harvests per trip, significantly reducing total movement distance and maximizing food accumulation within 720 steps.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    }
+  ]
+}

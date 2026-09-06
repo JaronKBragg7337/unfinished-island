@@ -1,42 +1,42 @@
 {
   "id": "child-0005",
-  "tick": 9720,
+  "tick": 10080,
   "rng": 1382718097,
-  "stored": 1173,
-  "harvested": 1173,
+  "stored": 1214,
+  "harvested": 1217,
   "agents": [
     {
       "id": "child-0005/resident-0",
-      "x": -0.9508509713469189,
-      "z": -0.24609436819755062,
-      "energy": 29.336746521224285,
-      "carrying": 0,
+      "x": -2.78684367851086,
+      "z": -0.5852373568990905,
+      "energy": 22.919448184382617,
+      "carrying": 1,
       "target": null,
-      "action": "gather"
+      "action": "deposit"
     },
     {
       "id": "child-0005/resident-1",
-      "x": -3.019706658645257,
-      "z": 0.9082867801110908,
-      "energy": 30.340985241433845,
-      "carrying": 0,
+      "x": -2.7871368500162834,
+      "z": -0.5852540091319571,
+      "energy": 23.863490000941443,
+      "carrying": 1,
       "target": null,
-      "action": "gather"
+      "action": "deposit"
     },
     {
       "id": "child-0005/resident-2",
-      "x": -3.3707850392485605,
-      "z": 1.2640443897182105,
-      "energy": 29.556418280035764,
-      "carrying": 0,
+      "x": -7.303367585038549,
+      "z": 2.7387628443894556,
+      "energy": 27.58545858179125,
+      "carrying": 1,
       "target": null,
-      "action": "gather"
+      "action": "deposit"
     },
     {
       "id": "child-0005/resident-3",
-      "x": -3.3707850392485605,
-      "z": 1.2640443897182105,
-      "energy": 28.22601385875385,
+      "x": -4.494380052331414,
+      "z": 1.6853925196242803,
+      "energy": 30.811297405213846,
       "carrying": 0,
       "target": null,
       "action": "gather"
@@ -65,7 +65,7 @@
       "id": "child-0005/food-3",
       "x": -10,
       "z": -2,
-      "amount": 8
+      "amount": 7
     }
   ],
   "events": [
@@ -473,6 +473,21 @@
       "tick": 9720,
       "stored": 1173,
       "harvested": 1173
+    },
+    {
+      "tick": 9840,
+      "stored": 1186,
+      "harvested": 1187
+    },
+    {
+      "tick": 9960,
+      "stored": 1200,
+      "harvested": 1202
+    },
+    {
+      "tick": 10080,
+      "stored": 1214,
+      "harvested": 1217
     }
   ]
 }
