@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Full-Load Optimization",
+  "hypothesis": "Previous attempts failed because mandatory deposit rules triggered immediately after gathering a single item (cargo=1), preventing full capacity utilization (cargo=3) and causing agents to carry less than their maximum load. This led to excessive travel distance per trip relative to food gained, effectively nullifying the benefit of fixed rest intervals. By changing the 'carrying' condition from `cargo>0` to `cargo>=2`, agents will only deposit once they have harvested enough items to be nearly full (ensuring a departure with cargo=3 if possible, or at least 2), thereby maximizing food per movement cycle and increasing total stored food within 720 steps.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    }
+  ]
+}
