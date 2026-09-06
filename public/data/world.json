@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 14,
+  "cycles": 15,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 5760,
-      "stored": 1454
+      "tick": 6120,
+      "stored": 1543
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 5400,
-      "stored": 866
+      "tick": 5760,
+      "stored": 922
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 5040,
-      "stored": 867
+      "tick": 5400,
+      "stored": 928
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 4680,
-      "stored": 630
+      "tick": 5040,
+      "stored": 678
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 4320,
-      "stored": 522
+      "tick": 4680,
+      "stored": 567
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 3960,
-      "stored": 694
+      "tick": 4320,
+      "stored": 757
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 3600,
-      "stored": 485
+      "tick": 3960,
+      "stored": 536
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 3240,
-      "stored": 666
+      "tick": 3600,
+      "stored": 736
     },
     {
       "id": "child-0009",
@@ -585,8 +585,8 @@
           }
         }
       ],
-      "tick": 2880,
-      "stored": 612
+      "tick": 3240,
+      "stored": 684
     },
     {
       "id": "child-0010",
@@ -650,8 +650,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 539
+      "tick": 2880,
+      "stored": 611
     },
     {
       "id": "child-0012",
@@ -715,8 +715,8 @@
           }
         }
       ],
-      "tick": 1800,
-      "stored": 185
+      "tick": 2160,
+      "stored": 216
     },
     {
       "id": "child-0013",
@@ -780,8 +780,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 343
+      "tick": 1800,
+      "stored": 426
     },
     {
       "id": "child-0014",
@@ -845,8 +845,8 @@
           }
         }
       ],
-      "tick": 1080,
-      "stored": 157
+      "tick": 1440,
+      "stored": 199
     }
   ],
   "events": [
@@ -1003,13 +1003,24 @@
       "at": "2026-09-06T05:06:35.098Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 13 child worlds."
+    },
+    {
+      "at": "2026-09-06T06:06:33.093Z",
+      "type": "experiment-failed",
+      "id": "child-0015",
+      "message": "Food coordinates within 18 metres"
+    },
+    {
+      "at": "2026-09-06T06:06:33.093Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 13 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 5040,
+    "age": 5400,
     "structures": []
   },
-  "updated": "2026-09-06T05:06:35.098Z",
-  "nextExpected": "2026-09-06T06:06:48.925Z"
+  "updated": "2026-09-06T06:06:33.093Z",
+  "nextExpected": "2026-09-06T07:06:41.408Z"
 }
