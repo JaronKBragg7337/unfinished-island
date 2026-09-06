@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 20,
+  "cycles": 21,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 7920,
-      "stored": 1989
+      "tick": 8280,
+      "stored": 2077
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 7560,
-      "stored": 1214
+      "tick": 7920,
+      "stored": 1272
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 7200,
-      "stored": 1235
+      "tick": 7560,
+      "stored": 1297
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 6840,
-      "stored": 923
+      "tick": 7200,
+      "stored": 970
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 6480,
-      "stored": 783
+      "tick": 6840,
+      "stored": 826
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 6120,
-      "stored": 1066
+      "tick": 6480,
+      "stored": 1129
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 5760,
-      "stored": 768
+      "tick": 6120,
+      "stored": 819
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 5400,
-      "stored": 1088
+      "tick": 5760,
+      "stored": 1158
     },
     {
       "id": "child-0009",
@@ -585,8 +585,8 @@
           }
         }
       ],
-      "tick": 5040,
-      "stored": 1044
+      "tick": 5400,
+      "stored": 1116
     },
     {
       "id": "child-0010",
@@ -650,8 +650,8 @@
           }
         }
       ],
-      "tick": 4680,
-      "stored": 971
+      "tick": 5040,
+      "stored": 1043
     },
     {
       "id": "child-0012",
@@ -715,8 +715,8 @@
           }
         }
       ],
-      "tick": 3960,
-      "stored": 388
+      "tick": 4320,
+      "stored": 424
     },
     {
       "id": "child-0013",
@@ -780,8 +780,8 @@
           }
         }
       ],
-      "tick": 3600,
-      "stored": 835
+      "tick": 3960,
+      "stored": 914
     },
     {
       "id": "child-0014",
@@ -845,8 +845,8 @@
           }
         }
       ],
-      "tick": 3240,
-      "stored": 433
+      "tick": 3600,
+      "stored": 482
     },
     {
       "id": "child-0016",
@@ -910,8 +910,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 405
+      "tick": 2880,
+      "stored": 461
     },
     {
       "id": "child-0017",
@@ -975,8 +975,8 @@
           }
         }
       ],
-      "tick": 2160,
-      "stored": 463
+      "tick": 2520,
+      "stored": 536
     },
     {
       "id": "child-0018",
@@ -1040,8 +1040,8 @@
           }
         }
       ],
-      "tick": 1800,
-      "stored": 221
+      "tick": 2160,
+      "stored": 261
     },
     {
       "id": "child-0019",
@@ -1105,8 +1105,8 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 304
+      "tick": 1800,
+      "stored": 379
     },
     {
       "id": "child-0020",
@@ -1170,8 +1170,73 @@
           }
         }
       ],
+      "tick": 1440,
+      "stored": 320
+    },
+    {
+      "id": "child-0021",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-06T12:06:32.792Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Colony Cache",
+      "hypothesis": "Enforcing mandatory deposit upon return home, immediate rest when energy drops below 28, and proximity-only gathering will maximize stored food reserves by eliminating travel waste and preventing population depletion.",
+      "hash": "9852cba92214b8630f58f22ad5b357450099e208531e54e2597b5bd628a0c0d0",
+      "source": "child-0021.island.json",
+      "snapshot": "child-0021.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 136,
+            "harvested": 137,
+            "meanEnergy": 27.83
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 24,
+            "meanEnergy": 86.44
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 134,
+            "harvested": 137,
+            "meanEnergy": 27.81
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 24,
+            "meanEnergy": 90.16
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 133,
+            "harvested": 136,
+            "meanEnergy": 27.9
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 24,
+            "meanEnergy": 88.13
+          }
+        }
+      ],
       "tick": 1080,
-      "stored": 246
+      "stored": 200
     }
   ],
   "events": [
@@ -1394,13 +1459,24 @@
       "at": "2026-09-06T11:06:32.787Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 18 child worlds."
+    },
+    {
+      "at": "2026-09-06T12:06:32.792Z",
+      "type": "child-created",
+      "id": "child-0021",
+      "message": "Mara / qwen3.5:4b wrote Mara's Colony Cache; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-06T12:06:32.792Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 19 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 7200,
+    "age": 7560,
     "structures": []
   },
-  "updated": "2026-09-06T11:06:32.787Z",
-  "nextExpected": "2026-09-06T12:06:41.645Z"
+  "updated": "2026-09-06T12:06:32.792Z",
+  "nextExpected": "2026-09-06T13:06:41.115Z"
 }

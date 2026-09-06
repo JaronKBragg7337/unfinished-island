@@ -1,0 +1,61 @@
+{
+  "language": "island/1",
+  "name": "Mara's Colony Cache",
+  "hypothesis": "Enforcing mandatory deposit upon return home, immediate rest when energy drops below 28, and proximity-only gathering will maximize stored food reserves by eliminating travel waste and preventing population depletion.",
+  "seed": 492,
+  "population": 8,
+  "speed": 0.5,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      -2
+    ],
+    [
+      -10,
+      5
+    ],
+    [
+      2,
+      -8
+    ],
+    [
+      -15,
+      -3
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      -13,
+      1
+    ],
+    [
+      -4,
+      7
+    ],
+    [
+      11,
+      -9
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
