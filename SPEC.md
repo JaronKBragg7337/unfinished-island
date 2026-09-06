@@ -9,3 +9,5 @@ World time advances by persisted simulation steps on the MSI, independent of vie
 Visual units are metres. Assets have stable IDs and assembled parts. Material provenance accompanies copied CC0 assets. Parent island is an original field station; its station dimensions are design decisions, not certified engineering. Child simulations initially use a simplified terrain and resource model.
 
 Phone controls: left touch movement stick appears only while pressed; right drag look in walk mode. Orbit and walking supported. Inspection includes IDs, metre coordinates and collision bounds. Phone performance is measured, not assumed. Desktop browser mobile emulation is not physical iPhone verification.
+
+Policy revisions added 2026-09-06: environmental fields are fixed to the selected predecessor. A revision records `revision.of`, paired evidence, adoption decision and reason. `policyChampionId` records which policy the next assignment builds on; rejected and tied proposals remain in history. This is assigned rule optimization, not spontaneous self-improvement.

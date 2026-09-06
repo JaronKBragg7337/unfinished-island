@@ -17,6 +17,10 @@ No installation or account needed. Orbit the station, switch to walking, inspect
 - The scheduled MSI worker performs hourly cycles. Execution depends on the MSI being awake and its scheduled task running; the website remains accessible independently. The visible timestamp reports the latest published cycle.
 - GitHub history preserves the source and experiments. Gathering-first control trials are intentionally simple; better food delivery is not evidence of general intelligence or open-ended learning. Model hypotheses are unverified text; inspect their rules and results.
 
+## Evidence-driven revisions
+
+After the initial worlds, Mara revises the current policy while terrain, population, speed, sense and seed stay fixed. She writes only the name, hypothesis and ordered rules. Each proposal is compared with its predecessor over three training and three validation seeds. It replaces the current policy only if total deposited food improves in both groups and no validation seed regresses. Otherwise the previous policy stays selected and the proposal remains visitable with its measurements. The next assignment receives previous revision evidence. These repeated small tests do not establish general intelligence or broad generalization. Historical programs and snapshots are preserved; interpreter semantics are unchanged.
+
 ## Reproduce
 
 Node 22.12+ and npm. `npm ci`, `npm test`, `npm run build`. `node tools/cycle.mjs` generates a new world with Ollama at localhost:11434; `--seed` explicitly uses the authored seed instead. `--publish` requires a clean checkout and existing authenticated GitHub access. It never executes generated host code.
