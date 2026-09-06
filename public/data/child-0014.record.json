@@ -1,0 +1,65 @@
+{
+  "id": "child-0014",
+  "parentId": "island-0001",
+  "terminalId": "island-0001/workstation-01",
+  "created": "2026-09-06T05:06:35.098Z",
+  "author": "Mara / qwen3.5:4b",
+  "assignment": "Explicitly assigned child-world experiment",
+  "name": "Mara's Depot Strategy",
+  "hypothesis": "Enforcing mandatory deposit upon return combined with immediate rest when energy drops below 28 and selective gathering only within proximity will maximize stored food reserves and extend operational lifespan compared to exploratory baselines.",
+  "hash": "5b66b82e5f741731fb600e2152b71047c3854dc3b0218ba8c0fcdbffcdbbd15a",
+  "source": "child-0014.island.json",
+  "snapshot": "child-0014.snapshot.json",
+  "results": [
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 105,
+        "harvested": 106,
+        "meanEnergy": 28.72
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 0,
+        "harvested": 12,
+        "meanEnergy": 91.4
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 106,
+        "harvested": 107,
+        "meanEnergy": 28.12
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 0,
+        "harvested": 12,
+        "meanEnergy": 89.21
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 105,
+        "harvested": 106,
+        "meanEnergy": 29.7
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 0,
+        "harvested": 12,
+        "meanEnergy": 91.41
+      }
+    }
+  ],
+  "prompt": "You are Mara, a resident at terminal island-0001/workstation-01. You are explicitly assigned to create a child simulation and improve food deposition. Write an executable declarative Island Language program, JSON only. No shell, JavaScript, markdown, or extra fields. Grammar: language=\"island/1\", name:string max70, hypothesis:string max800, seed:integer 1..1000000, population:integer 2..12, speed:number 0.3..2, sense:number 2..16, food:3..20 pairs [x,z] within -18..18, rules:1..8 {when,do}. Conditions: always,carrying,tired,foodNear. Actions: gather,deposit,rest,explore. First matching rule wins. Carrying capacity 3; deposit moves home and stores food; tired is energy<28; gather only helps with nearby food; include always fallback. Motion costs 0.8 energy/metre, rest restores4. Patches regenerate1 each30 ticks. Objective: design and explain a foraging society, then test it. Prior results: [{\"name\":\"Mara's Depot Strategy\",\"results\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":178,\"harvested\":178,\"meanEnergy\":29.62},\"baseline\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":18,\"meanEnergy\":92.9}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":179,\"harvested\":179,\"meanEnergy\":28.83},\"baseline\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":18,\"meanEnergy\":93.52}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":177,\"harvested\":178,\"meanEnergy\":29.84},\"baseline\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":18,\"meanEnergy\":93.35}}],\"hypothesis\":\"Enforcing mandatory deposit upon return combined with immediate rest when energy drops below 28 and selective gathering only within proximity will maximize stored food reserves and extend operational lifespan compared to exploratory baselines.\"},{\"name\":\"Mara's Accumulator2\",\"results\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":77,\"harvested\":78,\"meanEnergy\":27.26},\"baseline\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":12,\"meanEnergy\":93.82}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":69,\"harvested\":69,\"meanEnergy\":26.82},\"baseline\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":12,\"meanEnergy\":87.85}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":66,\"harvested\":67,\"meanEnergy\":27.87},\"baseline\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":12,\"meanEnergy\":83.59}}],\"hypothesis\":\"Aggressive immediate deposit upon return, resting below energy 28, and strict proximity gathering will maximize stored food reserves compared to exploratory baselines.\"},{\"name\":\"Mara's Depot Strategy\",\"results\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":172,\"harvested\":172,\"meanEnergy\":28.98},\"baseline\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":24,\"meanEnergy\":85.56}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":171,\"harvested\":177,\"meanEnergy\":26},\"baseline\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":24,\"meanEnergy\":88.6}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":174,\"harvested\":181,\"meanEnergy\":26.78},\"baseline\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":24,\"meanEnergy\":86.07}}],\"hypothesis\":\"Enforcing mandatory deposit upon return combined with immediate rest when energy drops below 28 and selective gathering only within proximity will maximize stored food reserves and extend operational lifespan compared to exploratory baselines.\"}]. Example syntax: {\"language\":\"island/1\",\"name\":\"Tidal Orchard\",\"hypothesis\":\"Returning gathered food before exploring may preserve a shared stockpile.\",\"seed\":713,\"population\":5,\"speed\":0.7,\"sense\":8,\"food\":[[-8,4],[9,6],[3,-10],[-12,-8],[13,-6]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}. Create your own program.",
+  "raw": "{\"language\":\"island/1\",\"name\":\"Mara's Depot Strategy\",\"hypothesis\":\"Enforcing mandatory deposit upon return combined with immediate rest when energy drops below 28 and selective gathering only within proximity will maximize stored food reserves and extend operational lifespan compared to exploratory baselines.\",\"seed\":492,\"population\":4,\"speed\":0.7,\"sense\":12,\"food\":[[-5,3],[6,-4],[-2,-5],[8,6]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}"
+}
