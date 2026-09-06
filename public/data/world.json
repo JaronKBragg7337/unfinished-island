@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 11,
+  "cycles": 12,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 4680,
-      "stored": 1187
+      "tick": 5040,
+      "stored": 1277
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 4320,
-      "stored": 688
+      "tick": 4680,
+      "stored": 748
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 3960,
-      "stored": 684
+      "tick": 4320,
+      "stored": 746
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 3600,
-      "stored": 488
+      "tick": 3960,
+      "stored": 537
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 3240,
-      "stored": 395
+      "tick": 3600,
+      "stored": 438
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 2880,
-      "stored": 508
+      "tick": 3240,
+      "stored": 570
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 2520,
-      "stored": 339
+      "tick": 2880,
+      "stored": 389
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 2160,
-      "stored": 446
+      "tick": 2520,
+      "stored": 520
     },
     {
       "id": "child-0009",
@@ -585,8 +585,8 @@
           }
         }
       ],
-      "tick": 1800,
-      "stored": 396
+      "tick": 2160,
+      "stored": 468
     },
     {
       "id": "child-0010",
@@ -650,8 +650,73 @@
           }
         }
       ],
-      "tick": 1440,
-      "stored": 323
+      "tick": 1800,
+      "stored": 395
+    },
+    {
+      "id": "child-0012",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-06T03:06:32.726Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Accumulator2",
+      "hypothesis": "Aggressive immediate deposit upon return, resting below energy 28, and strict proximity gathering will maximize stored food reserves compared to exploratory baselines.",
+      "hash": "a8de953759d938c4974f2d0b31081afb8d503917891fde5f959a9dda1ae806f4",
+      "source": "child-0012.island.json",
+      "snapshot": "child-0012.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 77,
+            "harvested": 78,
+            "meanEnergy": 27.26
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 12,
+            "meanEnergy": 93.82
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 69,
+            "harvested": 69,
+            "meanEnergy": 26.82
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 12,
+            "meanEnergy": 87.85
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 66,
+            "harvested": 67,
+            "meanEnergy": 27.87
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 12,
+            "meanEnergy": 83.59
+          }
+        }
+      ],
+      "tick": 1080,
+      "stored": 110
     }
   ],
   "events": [
@@ -775,13 +840,24 @@
       "at": "2026-09-06T02:06:32.533Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 10 child worlds."
+    },
+    {
+      "at": "2026-09-06T03:06:32.726Z",
+      "type": "child-created",
+      "id": "child-0012",
+      "message": "Mara / qwen3.5:4b wrote Mara's Accumulator2; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-06T03:06:32.726Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 11 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 3960,
+    "age": 4320,
     "structures": []
   },
-  "updated": "2026-09-06T02:06:32.533Z",
-  "nextExpected": "2026-09-06T03:06:40.217Z"
+  "updated": "2026-09-06T03:06:32.726Z",
+  "nextExpected": "2026-09-06T04:06:40.902Z"
 }

@@ -1,0 +1,45 @@
+{
+  "language": "island/1",
+  "name": "Mara's Accumulator2",
+  "hypothesis": "Aggressive immediate deposit upon return, resting below energy 28, and strict proximity gathering will maximize stored food reserves compared to exploratory baselines.",
+  "seed": 4097,
+  "population": 4,
+  "speed": 0.5,
+  "sense": 6,
+  "food": [
+    [
+      -10,
+      2
+    ],
+    [
+      -5,
+      -5
+    ],
+    [
+      8,
+      -3
+    ],
+    [
+      -14,
+      8
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}
