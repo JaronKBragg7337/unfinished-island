@@ -1,45 +1,45 @@
 {
   "id": "child-0005",
-  "tick": 11160,
+  "tick": 11520,
   "rng": 1382718097,
-  "stored": 1346,
-  "harvested": 1347,
+  "stored": 1389,
+  "harvested": 1390,
   "agents": [
     {
       "id": "child-0005/resident-0",
-      "x": 0.700486219787497,
-      "z": 3.552311027441382,
-      "energy": 30.7301255329726,
+      "x": 0.8397064078220842,
+      "z": 4.135935683572027,
+      "energy": 28.78649362308408,
       "carrying": 0,
       "target": null,
       "action": "gather"
     },
     {
       "id": "child-0005/resident-1",
-      "x": -2.0301515190165,
-      "z": -2.0301515190165,
-      "energy": 27.99796905836719,
-      "carrying": 1,
-      "target": null,
-      "action": "deposit"
-    },
-    {
-      "id": "child-0005/resident-2",
-      "x": 0.002692109875146259,
-      "z": 0.012127534034199638,
-      "energy": 29.722042019084938,
-      "carrying": 0,
-      "target": null,
-      "action": "rest"
-    },
-    {
-      "id": "child-0005/resident-3",
       "x": 0.39047482407358114,
       "z": 1.7571367083311156,
-      "energy": 29.636750043310233,
+      "energy": 30.60180397981022,
       "carrying": 0,
       "target": null,
       "action": "gather"
+    },
+    {
+      "id": "child-0005/resident-2",
+      "x": -0.2725643823301026,
+      "z": 0.1559313266669901,
+      "energy": 27.705436389297887,
+      "carrying": 0,
+      "target": null,
+      "action": "gather"
+    },
+    {
+      "id": "child-0005/resident-3",
+      "x": -1.181623381592643,
+      "z": -1.181623381592643,
+      "energy": 23.636437070530913,
+      "carrying": 1,
+      "target": null,
+      "action": "deposit"
     }
   ],
   "food": [
@@ -533,6 +533,21 @@
       "tick": 11160,
       "stored": 1346,
       "harvested": 1347
+    },
+    {
+      "tick": 11280,
+      "stored": 1360,
+      "harvested": 1361
+    },
+    {
+      "tick": 11400,
+      "stored": 1375,
+      "harvested": 1376
+    },
+    {
+      "tick": 11520,
+      "stored": 1389,
+      "harvested": 1390
     }
   ]
 }

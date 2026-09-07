@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Energy-Limited Foraging",
+  "hypothesis": "Previous strategies prioritized cargo volume over energy conservation, forcing agents to deplete their energy reserves to reach maximum capacity (3 units) before depositing. This high-energy cost per trip resulted in premature exhaustion and zero stored food. By switching the mandatory deposit trigger from a cargo-based condition ('carrying') to an energy-based condition ('tired'), agents will stop at the optimal point where they are most fatigued rather than full, balancing movement efficiency with survival. Combined with a fixed rest interval, this ensures agents return home frequently without over-extending their limited energy pool.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "tired",
+      "do": "deposit"
+    },
+    {
+      "when": "carrying",
+      "do": "rest"
+    }
+  ]
+}
