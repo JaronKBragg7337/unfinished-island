@@ -23,7 +23,7 @@ export function create(p,id='child-0000'){
  for(let i=0;i<p.population;i++)s.agents.push({id:`${id}/resident-${i}`,x:(random(s)-0.5)*4,z:(random(s)-0.5)*4,energy:100,carrying:0,target:null,action:'explore'});
  return s;
 }
-export function step(p,s,n=1){
+export function step(p,s,n=1,observe=null){
  for(let t=0;t<n;t++){
   s.tick++;
   for(const f of s.food)if(s.tick%30===0)f.amount=Math.min(8,f.amount+1);
@@ -31,6 +31,7 @@ export function step(p,s,n=1){
    const nearest=s.food.filter(f=>f.amount>0).sort((f,g)=>Math.hypot(f.x-a.x,f.z-a.z)-Math.hypot(g.x-a.x,g.z-a.z))[0];
    const near=nearest&&Math.hypot(nearest.x-a.x,nearest.z-a.z)<=p.sense;
    const rule=p.rules.find(r=>r.when==='always'||r.when==='carrying'&&a.carrying>0||r.when==='tired'&&a.energy<28||r.when==='foodNear'&&near);
+   if(observe)observe({ruleIndex:p.rules.indexOf(rule),carrying:a.carrying,energy:a.energy,tick:s.tick});
    a.action=rule.do;
    if(rule.do==='rest'){a.energy=Math.min(100,a.energy+4);continue;}
    if(a.energy<=0){a.energy=Math.min(100,a.energy+2);a.action='recover';continue;}

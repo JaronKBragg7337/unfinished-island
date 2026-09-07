@@ -21,6 +21,10 @@ No installation or account needed. Orbit the station, switch to walking, inspect
 
 After the initial worlds, Mara revises the current policy while terrain, population, speed, sense and seed stay fixed. She writes only the name, hypothesis and ordered rules. Each proposal is compared with its predecessor over three training and three validation seeds. It replaces the current policy only if total deposited food improves in both groups and no validation seed regresses. Otherwise the previous policy stays selected and the proposal remains visitable with its measurements. The next assignment receives previous revision evidence. These repeated small tests do not establish general intelligence or broad generalization. Historical programs and snapshots are preserved; interpreter semantics are unchanged.
 
+## Execution feedback
+
+Each proposal now runs a diagnostic trial with per-rule selection counts. Unreachable rules, missing gather/deposit actions and zero delivered food are reported to Mara. She gets at most one model-authored repair, with a constrained output schema; both prompts and responses remain in the full record. Poor second attempts are still preserved, and invalid attempts remain failure records. The computer displays the actual rule counts. This changes feedback, not historical simulation semantics or the adoption criteria.
+
 ## Reproduce
 
 Node 22.12+ and npm. `npm ci`, `npm test`, `npm run build`. `node tools/cycle.mjs` generates a new world with Ollama at localhost:11434; `--seed` explicitly uses the authored seed instead. `--publish` requires a clean checkout and existing authenticated GitHub access. It never executes generated host code.
