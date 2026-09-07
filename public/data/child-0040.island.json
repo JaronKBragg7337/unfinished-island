@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Cache Optimization",
+  "hypothesis": "Previous mandatory deposit strategies failed because forcing a return trip after only one item (cargo=1) or two items (cargo=2) resulted in suboptimal load factors and excessive travel distances per food unit harvested. The optimal approach is to delay mandatory deposition until the agent reaches full capacity (cargo=3), allowing them to gather three items before returning home. This maximizes the food-per-trip ratio, ensuring agents utilize their full energy reserves efficiently for maximum harvest volume rather than stopping prematurely due to artificial cargo thresholds.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    }
+  ]
+}
