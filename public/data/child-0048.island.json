@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Priority Forager",
+  "hypothesis": "Placing 'carrying' before 'foodNear' ensures cargo is deposited before gathering additional items, preventing wasted energy moving back to base with empty hands or carrying full loads without harvesting.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    }
+  ]
+}
