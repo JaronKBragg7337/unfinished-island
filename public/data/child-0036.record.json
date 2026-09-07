@@ -1,0 +1,172 @@
+{
+  "revision": {
+    "of": "child-0023",
+    "training": [
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 17,
+          "stored": 0,
+          "harvested": 0,
+          "meanEnergy": 1.56
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 17,
+          "stored": 165,
+          "harvested": 166,
+          "meanEnergy": 28.48
+        }
+      },
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 83,
+          "stored": 0,
+          "harvested": 0,
+          "meanEnergy": 1.41
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 83,
+          "stored": 161,
+          "harvested": 162,
+          "meanEnergy": 28.94
+        }
+      },
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 211,
+          "stored": 0,
+          "harvested": 0,
+          "meanEnergy": 1.41
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 211,
+          "stored": 162,
+          "harvested": 163,
+          "meanEnergy": 29.59
+        }
+      }
+    ],
+    "holdout": [
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 401,
+          "stored": 0,
+          "harvested": 0,
+          "meanEnergy": 1.41
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 401,
+          "stored": 165,
+          "harvested": 166,
+          "meanEnergy": 28.94
+        }
+      },
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 809,
+          "stored": 0,
+          "harvested": 0,
+          "meanEnergy": 1.41
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 809,
+          "stored": 157,
+          "harvested": 158,
+          "meanEnergy": 29.21
+        }
+      },
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 1543,
+          "stored": 0,
+          "harvested": 0,
+          "meanEnergy": 1.27
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 1543,
+          "stored": 163,
+          "harvested": 163,
+          "meanEnergy": 29.25
+        }
+      }
+    ],
+    "trainingDelta": -488,
+    "holdoutDelta": -485,
+    "adopted": false,
+    "reason": "Previous policy retained: requires improvement in both groups and no holdout regression."
+  },
+  "id": "child-0036",
+  "parentId": "island-0001",
+  "terminalId": "island-0001/workstation-01",
+  "created": "2026-09-07T02:06:33.307Z",
+  "author": "Mara / qwen3.5:4b",
+  "assignment": "Explicitly assigned child-world experiment",
+  "name": "Mara's Capacity Heuristics",
+  "hypothesis": "Previous attempts failed because mandatory deposit rules triggered immediately after gathering a single item (cargo=1), preventing full capacity utilization and causing agents to carry less than their maximum load. This led to excessive travel distance per trip relative to food gained, effectively nullifying the benefit of fixed rest intervals. By changing the 'carrying' condition from cargo>0 to cargo>=2, agents will only deposit once they have harvested enough items to be nearly full (ensuring a departure with cargo=3 if possible, or at least 2), thereby maximizing food per movement cycle and increasing total stored food within 720 steps.",
+  "hash": "371bb434f1b4d33621c96bd56abd03c801bc701ac3daff1aae21161f6dc56cd8",
+  "source": "child-0036.island.json",
+  "snapshot": "child-0036.snapshot.json",
+  "results": [
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 0,
+        "harvested": 0,
+        "meanEnergy": 1.56
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 0,
+        "harvested": 18,
+        "meanEnergy": 91.67
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 0,
+        "harvested": 0,
+        "meanEnergy": 1.41
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 0,
+        "harvested": 18,
+        "meanEnergy": 91.05
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 0,
+        "harvested": 0,
+        "meanEnergy": 1.41
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 0,
+        "harvested": 18,
+        "meanEnergy": 84.23
+      }
+    }
+  ],
+  "prompt": "You are Mara. You are explicitly assigned to improve the ordered foraging rules of your existing world child-0023. The environment is FIXED. Return JSON with EXACTLY three keys: name (1..70 characters), hypothesis (max800 characters), rules (1..8 objects {when,do}). Do not return environment fields. Allowed conditions: always,carrying,tired,foodNear. Actions: gather,deposit,rest,explore. First matching rule wins; include always. carrying means cargo>0 (capacity3); tired means energy<28. gather moves toward nearest nonempty patch and harvests; deposit returns home and stores cargo; rest restores4 energy per step; movement costs0.8 per metre. Score is deposited food after720 steps. Parent program: {\"language\":\"island/1\",\"name\":\"Mara's Cache Optimization\",\"hypothesis\":\"Forcing mandatory deposit on every return trip combined with a fixed rest interval before re-gathering will increase total stored food by 40% compared to the baseline by eliminating energy waste from unnecessary travel.\",\"seed\":529,\"population\":6,\"speed\":1.1,\"sense\":12,\"food\":[[-6,3],[7,-5],[-3,9],[-9,-2],[11,4],[-15,-7]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}. Previous revision evidence: [{\"id\":\"child-0032\",\"hypothesis\":\"Previous attempts failed because agents deposited food immediately after gathering a single item (cargo=1), failing to utilize their capacity of 3. This led to excessive travel distance and energy expenditure, resulting in zero stored food for the agent population. By restricting the mandatory 'deposit' action to only trigger when the cargo count reaches exactly 2 (allowing one final item before full capacity is hit, ensuring a load of 3 upon departure), agents will maximize harvests per trip. Combined with the existing energy-based rest logic, this strategy optimizes movement efficiency and stored food accumulation.\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false},{\"id\":\"child-0033\",\"hypothesis\":\"Previous attempts failed because mandatory deposit rules triggered immediately after gathering a single item (cargo=1), preventing full capacity utilization (cargo=3) and causing agents to carry less than their maximum load. This led to excessive travel distance per trip relative to food gained, effectively nullifying the benefit of fixed rest intervals. By changing the 'carrying' condition from `cargo>0` to `cargo>=2`, agents will only deposit once they have harvested enough items to be nearly full (ensuring a departure with cargo=3 if possible, or at least 2), thereby maximizing food per movement cycle and increasing total stored food within 720 steps.\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false},{\"id\":\"child-0034\",\"hypothesis\":\"Previous strategies prioritized cargo volume over energy conservation, forcing agents to deplete their energy reserves to reach maximum capacity (3 units) before depositing. This high-energy cost per trip resulted in premature exhaustion and zero stored food. By switching the mandatory deposit trigger from a cargo-based condition ('carrying') to an energy-based condition ('tired'), agents will stop at the optimal point where they are most fatigued rather than full, balancing movement efficiency with survival. Combined with a fixed rest interval, this ensures agents return home frequently without over-extending their limited energy pool.\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"deposit\"},{\"when\":\"carrying\",\"do\":\"rest\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false},{\"id\":\"child-0035\",\"hypothesis\":\"Previous attempts failed because mandatory deposit rules triggered immediately after gathering a single item (cargo=1), preventing full capacity utilization and causing agents to carry less than their maximum load. This led to excessive travel distance per trip relative to food gained, effectively nullifying the benefit of fixed rest intervals. By changing the 'carrying' condition from cargo>=0 to cargo>0 but delaying the first mandatory deposit until the agent has harvested enough items to be nearly full (specifically, requiring 2 items before the first forced deposit), agents will maximize food per movement cycle and increase total stored food within 720 steps.\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false}]. Propose a specific rule change based on evidence. Your proposed world remains in history even if it performs worse. Only measured improvement can replace the previous policy. A new name is not an improvement.",
+  "raw": "{\"name\":\"Mara's Capacity Heuristics\",\"hypothesis\":\"Previous attempts failed because mandatory deposit rules triggered immediately after gathering a single item (cargo=1), preventing full capacity utilization and causing agents to carry less than their maximum load. This led to excessive travel distance per trip relative to food gained, effectively nullifying the benefit of fixed rest intervals. By changing the 'carrying' condition from cargo>0 to cargo>=2, agents will only deposit once they have harvested enough items to be nearly full (ensuring a departure with cargo=3 if possible, or at least 2), thereby maximizing food per movement cycle and increasing total stored food within 720 steps.\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"}]}"
+}
