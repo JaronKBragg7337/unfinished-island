@@ -1,0 +1,49 @@
+{
+  "language": "island/1",
+  "name": "Mara's Load Maximizer",
+  "hypothesis": "Previous attempts failed because mandatory deposit rules (cargo>0 or cargo>=3) triggered before agents could utilize their full capacity of 3 units, leading to premature return trips and wasted travel energy. The evidence consistently shows that agents stop gathering with cargo=1, cargo=2, or occasionally cargo=3 due to the 'carrying' rule firing too early or at the wrong threshold. By removing the artificial 'carrying' deposit trigger entirely and relying solely on the natural 'foodNear' gathering loop until an agent physically runs out of space (implicitly reaching cargo=3), agents will maximize harvest volume per trip before any forced return occurs, thereby increasing total stored food.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    }
+  ]
+}
