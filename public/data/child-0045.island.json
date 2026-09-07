@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Full Load Cache",
+  "hypothesis": "Previous mandatory deposit rules failed because agents were forced to return with minimal loads (1 or 2 items), wasting the capacity of their 3-item storage and incurring high travel costs relative to food gained. The evidence shows that delaying the 'carrying' deposit trigger until the agent reaches full capacity (cargo=3) maximizes food per trip distance. By only forcing a return when the cargo count equals the maximum capacity (3), agents will accumulate more food before paying the energy penalty of travel, resulting in a higher net stored food count within the 720-step horizon.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    }
+  ]
+}

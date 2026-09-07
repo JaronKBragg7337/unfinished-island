@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 44,
+  "cycles": 45,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 16560,
-      "stored": 4149
+      "tick": 16920,
+      "stored": 4238
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 16200,
-      "stored": 2609
+      "tick": 16560,
+      "stored": 2670
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 15840,
-      "stored": 2732
+      "tick": 16200,
+      "stored": 2795
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 15480,
-      "stored": 2074
+      "tick": 15840,
+      "stored": 2123
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 15120,
-      "stored": 1821
+      "tick": 15480,
+      "stored": 1866
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 14760,
-      "stored": 2561
+      "tick": 15120,
+      "stored": 2624
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 14400,
-      "stored": 1898
+      "tick": 14760,
+      "stored": 1949
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 14040,
-      "stored": 2807
+      "tick": 14400,
+      "stored": 2878
     },
     {
       "id": "child-0009",
@@ -585,8 +585,8 @@
           }
         }
       ],
-      "tick": 13680,
-      "stored": 2772
+      "tick": 14040,
+      "stored": 2844
     },
     {
       "id": "child-0010",
@@ -650,8 +650,8 @@
           }
         }
       ],
-      "tick": 13320,
-      "stored": 2699
+      "tick": 13680,
+      "stored": 2771
     },
     {
       "id": "child-0012",
@@ -715,8 +715,8 @@
           }
         }
       ],
-      "tick": 12600,
-      "stored": 1250
+      "tick": 12960,
+      "stored": 1286
     },
     {
       "id": "child-0013",
@@ -780,8 +780,8 @@
           }
         }
       ],
-      "tick": 12240,
-      "stored": 2802
+      "tick": 12600,
+      "stored": 2882
     },
     {
       "id": "child-0014",
@@ -845,8 +845,8 @@
           }
         }
       ],
-      "tick": 11880,
-      "stored": 1526
+      "tick": 12240,
+      "stored": 1567
     },
     {
       "id": "child-0016",
@@ -910,8 +910,8 @@
           }
         }
       ],
-      "tick": 11160,
-      "stored": 1770
+      "tick": 11520,
+      "stored": 1825
     },
     {
       "id": "child-0017",
@@ -975,8 +975,8 @@
           }
         }
       ],
-      "tick": 10800,
-      "stored": 2179
+      "tick": 11160,
+      "stored": 2253
     },
     {
       "id": "child-0018",
@@ -1040,8 +1040,8 @@
           }
         }
       ],
-      "tick": 10440,
-      "stored": 1234
+      "tick": 10800,
+      "stored": 1276
     },
     {
       "id": "child-0019",
@@ -1105,8 +1105,8 @@
           }
         }
       ],
-      "tick": 10080,
-      "stored": 2028
+      "tick": 10440,
+      "stored": 2101
     },
     {
       "id": "child-0020",
@@ -1170,8 +1170,8 @@
           }
         }
       ],
-      "tick": 9720,
-      "stored": 1974
+      "tick": 10080,
+      "stored": 2047
     },
     {
       "id": "child-0021",
@@ -1235,8 +1235,8 @@
           }
         }
       ],
-      "tick": 9360,
-      "stored": 1648
+      "tick": 9720,
+      "stored": 1710
     },
     {
       "id": "child-0022",
@@ -1300,8 +1300,8 @@
           }
         }
       ],
-      "tick": 9000,
-      "stored": 1265
+      "tick": 9360,
+      "stored": 1317
     },
     {
       "id": "child-0023",
@@ -1365,8 +1365,8 @@
           }
         }
       ],
-      "tick": 8640,
-      "stored": 1745
+      "tick": 9000,
+      "stored": 1819
     },
     {
       "revision": {
@@ -1537,7 +1537,7 @@
           }
         }
       ],
-      "tick": 8280,
+      "tick": 8640,
       "stored": 0
     },
     {
@@ -1709,7 +1709,7 @@
           }
         }
       ],
-      "tick": 7920,
+      "tick": 8280,
       "stored": 0
     },
     {
@@ -1881,7 +1881,7 @@
           }
         }
       ],
-      "tick": 7560,
+      "tick": 7920,
       "stored": 0
     },
     {
@@ -2053,7 +2053,7 @@
           }
         }
       ],
-      "tick": 7200,
+      "tick": 7560,
       "stored": 0
     },
     {
@@ -2225,7 +2225,7 @@
           }
         }
       ],
-      "tick": 6840,
+      "tick": 7200,
       "stored": 0
     },
     {
@@ -2397,7 +2397,7 @@
           }
         }
       ],
-      "tick": 6120,
+      "tick": 6480,
       "stored": 0
     },
     {
@@ -2569,7 +2569,7 @@
           }
         }
       ],
-      "tick": 5760,
+      "tick": 6120,
       "stored": 0
     },
     {
@@ -2741,7 +2741,7 @@
           }
         }
       ],
-      "tick": 5400,
+      "tick": 5760,
       "stored": 0
     },
     {
@@ -2913,7 +2913,7 @@
           }
         }
       ],
-      "tick": 5040,
+      "tick": 5400,
       "stored": 0
     },
     {
@@ -3085,7 +3085,7 @@
           }
         }
       ],
-      "tick": 4680,
+      "tick": 5040,
       "stored": 0
     },
     {
@@ -3257,7 +3257,7 @@
           }
         }
       ],
-      "tick": 4320,
+      "tick": 4680,
       "stored": 0
     },
     {
@@ -3429,7 +3429,7 @@
           }
         }
       ],
-      "tick": 3960,
+      "tick": 4320,
       "stored": 0
     },
     {
@@ -3601,7 +3601,7 @@
           }
         }
       ],
-      "tick": 3240,
+      "tick": 3600,
       "stored": 0
     },
     {
@@ -3773,7 +3773,7 @@
           }
         }
       ],
-      "tick": 2520,
+      "tick": 2880,
       "stored": 0
     },
     {
@@ -3945,7 +3945,179 @@
           }
         }
       ],
-      "tick": 1440,
+      "tick": 1800,
+      "stored": 0
+    },
+    {
+      "revision": {
+        "of": "child-0023",
+        "training": [
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 17,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.56
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 17,
+              "stored": 165,
+              "harvested": 166,
+              "meanEnergy": 28.48
+            }
+          },
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 83,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.41
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 83,
+              "stored": 161,
+              "harvested": 162,
+              "meanEnergy": 28.94
+            }
+          },
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 211,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.41
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 211,
+              "stored": 162,
+              "harvested": 163,
+              "meanEnergy": 29.59
+            }
+          }
+        ],
+        "holdout": [
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 401,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.41
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 401,
+              "stored": 165,
+              "harvested": 166,
+              "meanEnergy": 28.94
+            }
+          },
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 809,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.41
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 809,
+              "stored": 157,
+              "harvested": 158,
+              "meanEnergy": 29.21
+            }
+          },
+          {
+            "candidate": {
+              "ticks": 720,
+              "seed": 1543,
+              "stored": 0,
+              "harvested": 0,
+              "meanEnergy": 1.27
+            },
+            "parent": {
+              "ticks": 720,
+              "seed": 1543,
+              "stored": 163,
+              "harvested": 163,
+              "meanEnergy": 29.25
+            }
+          }
+        ],
+        "trainingDelta": -488,
+        "holdoutDelta": -485,
+        "adopted": false,
+        "reason": "Previous policy retained: requires improvement in both groups and no holdout regression."
+      },
+      "id": "child-0045",
+      "parentId": "island-0001",
+      "terminalId": "island-0001/workstation-01",
+      "created": "2026-09-07T12:06:32.744Z",
+      "author": "Mara / qwen3.5:4b",
+      "assignment": "Explicitly assigned child-world experiment",
+      "name": "Mara's Full Load Cache",
+      "hypothesis": "Previous mandatory deposit rules failed because agents were forced to return with minimal loads (1 or 2 items), wasting the capacity of their 3-item storage and incurring high travel costs relative to food gained. The evidence shows that delaying the 'carrying' deposit trigger until the agent reaches full capacity (cargo=3) maximizes food per trip distance. By only forcing a return when the cargo count equals the maximum capacity (3), agents will accumulate more food before paying the energy penalty of travel, resulting in a higher net stored food count within the 720-step horizon.",
+      "hash": "d08d48f2f33616853f5efcf33737e67b83593649f267904024fc56a529c1ea82",
+      "source": "child-0045.island.json",
+      "snapshot": "child-0045.snapshot.json",
+      "results": [
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 0,
+            "meanEnergy": 1.56
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 17,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 91.67
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 0,
+            "meanEnergy": 1.41
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 83,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 91.05
+          }
+        },
+        {
+          "candidate": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 0,
+            "meanEnergy": 1.41
+          },
+          "baseline": {
+            "ticks": 720,
+            "seed": 211,
+            "stored": 0,
+            "harvested": 18,
+            "meanEnergy": 84.23
+          }
+        }
+      ],
+      "tick": 1080,
       "stored": 0
     }
   ],
@@ -4523,14 +4695,31 @@
       "at": "2026-09-07T11:06:32.794Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 36 child worlds."
+    },
+    {
+      "at": "2026-09-07T12:06:32.744Z",
+      "type": "policy-evaluated",
+      "id": "child-0045",
+      "message": "Revision of child-0023: previous policy retained; training food delta -488, holdout delta -485."
+    },
+    {
+      "at": "2026-09-07T12:06:32.744Z",
+      "type": "child-created",
+      "id": "child-0045",
+      "message": "Mara / qwen3.5:4b wrote Mara's Full Load Cache; executed 720 steps and three paired trials."
+    },
+    {
+      "at": "2026-09-07T12:06:32.744Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 37 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 15840,
+    "age": 16200,
     "structures": []
   },
-  "updated": "2026-09-07T11:06:32.794Z",
-  "nextExpected": "2026-09-07T12:06:41.997Z",
+  "updated": "2026-09-07T12:06:32.744Z",
+  "nextExpected": "2026-09-07T13:06:42.264Z",
   "policyChampionId": "child-0023"
 }

@@ -1,6 +1,6 @@
 {
   "id": "child-0025",
-  "tick": 7920,
+  "tick": 8280,
   "rng": 13758493,
   "stored": 0,
   "harvested": 6,
@@ -426,6 +426,21 @@
     },
     {
       "tick": 7920,
+      "stored": 0,
+      "harvested": 6
+    },
+    {
+      "tick": 8040,
+      "stored": 0,
+      "harvested": 6
+    },
+    {
+      "tick": 8160,
+      "stored": 0,
+      "harvested": 6
+    },
+    {
+      "tick": 8280,
       "stored": 0,
       "harvested": 6
     }
