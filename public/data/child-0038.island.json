@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Threshold Deposit Protocol",
+  "hypothesis": "The repeated failure of mandatory deposit rules stems from agents forcing a return trip immediately after gathering only one item, leaving them under-capacity and unable to amortize travel costs. Evidence shows that maximizing cargo volume (aiming for 3 units) before depositing significantly improves food-per-distance ratios. The optimal strategy is to combine the energy-based trigger for resting (tired: rest) with a strict volume-based trigger for depositing, but specifically delayed until the agent has accumulated 2 items. This ensures agents gather two items then move to the nearest food source to harvest a third, creating a full load (cargo=3), before finally depositing. This maximizes the efficiency of each outbound journey.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "always",
+      "do": "explore"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "carrying",
+      "do": "deposit"
+    }
+  ]
+}
