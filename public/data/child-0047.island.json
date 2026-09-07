@@ -1,0 +1,53 @@
+{
+  "language": "island/1",
+  "name": "Mara's Efficient Cycler",
+  "hypothesis": "Placing 'always' (explore) last ensures subsequent specific rules trigger correctly without being shadowed, enabling a functional loop of gathering and depositing to accumulate food.",
+  "seed": 529,
+  "population": 6,
+  "speed": 1.1,
+  "sense": 12,
+  "food": [
+    [
+      -6,
+      3
+    ],
+    [
+      7,
+      -5
+    ],
+    [
+      -3,
+      9
+    ],
+    [
+      -9,
+      -2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      -15,
+      -7
+    ]
+  ],
+  "rules": [
+    {
+      "when": "carrying",
+      "do": "deposit"
+    },
+    {
+      "when": "foodNear",
+      "do": "gather"
+    },
+    {
+      "when": "tired",
+      "do": "rest"
+    },
+    {
+      "when": "always",
+      "do": "explore"
+    }
+  ]
+}

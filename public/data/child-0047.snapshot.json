@@ -1,0 +1,166 @@
+{
+  "id": "child-0047",
+  "tick": 1080,
+  "rng": 351559473,
+  "stored": 233,
+  "harvested": 235,
+  "agents": [
+    {
+      "id": "child-0047/resident-0",
+      "x": -6.18548751527463,
+      "z": -3.026854604697846,
+      "energy": 25.982522442381573,
+      "carrying": 0,
+      "target": {
+        "x": -4.303592640906572,
+        "z": -3.5142939356155694
+      },
+      "action": "gather"
+    },
+    {
+      "id": "child-0047/resident-1",
+      "x": -6.026324089659117,
+      "z": 3.030724587046264,
+      "energy": 30.960000000000008,
+      "carrying": 1,
+      "target": {
+        "x": -16.06361670512706,
+        "z": -3.5697905435226858
+      },
+      "action": "gather"
+    },
+    {
+      "id": "child-0047/resident-2",
+      "x": 8.523937248557942,
+      "z": 4.901841304335385,
+      "energy": 31.046758867953727,
+      "carrying": 0,
+      "target": {
+        "x": 12.421853978186846,
+        "z": 6.519352536182851
+      },
+      "action": "gather"
+    },
+    {
+      "id": "child-0047/resident-3",
+      "x": 4.981950413784336,
+      "z": -0.745605481958366,
+      "energy": 28.251958495672046,
+      "carrying": 0,
+      "target": {
+        "x": 15.415820815600455,
+        "z": -10.830601576250046
+      },
+      "action": "gather"
+    },
+    {
+      "id": "child-0047/resident-4",
+      "x": 0.8951068183274086,
+      "z": -0.6393620130910062,
+      "energy": 26.109712980704906,
+      "carrying": 0,
+      "target": {
+        "x": -10.693399163894355,
+        "z": -14.216970175039023
+      },
+      "action": "gather"
+    },
+    {
+      "id": "child-0047/resident-5",
+      "x": -9,
+      "z": -2,
+      "energy": 23.91348965827084,
+      "carrying": 1,
+      "target": {
+        "x": -13.264426529407501,
+        "z": -7.542550944257528
+      },
+      "action": "gather"
+    }
+  ],
+  "food": [
+    {
+      "id": "child-0047/food-0",
+      "x": -6,
+      "z": 3,
+      "amount": 0
+    },
+    {
+      "id": "child-0047/food-1",
+      "x": 7,
+      "z": -5,
+      "amount": 1
+    },
+    {
+      "id": "child-0047/food-2",
+      "x": -3,
+      "z": 9,
+      "amount": 1
+    },
+    {
+      "id": "child-0047/food-3",
+      "x": -9,
+      "z": -2,
+      "amount": 0
+    },
+    {
+      "id": "child-0047/food-4",
+      "x": 11,
+      "z": 4,
+      "amount": 1
+    },
+    {
+      "id": "child-0047/food-5",
+      "x": -15,
+      "z": -7,
+      "amount": 8
+    }
+  ],
+  "events": [
+    {
+      "tick": 120,
+      "stored": 38,
+      "harvested": 41
+    },
+    {
+      "tick": 240,
+      "stored": 63,
+      "harvested": 65
+    },
+    {
+      "tick": 360,
+      "stored": 90,
+      "harvested": 90
+    },
+    {
+      "tick": 480,
+      "stored": 114,
+      "harvested": 115
+    },
+    {
+      "tick": 600,
+      "stored": 138,
+      "harvested": 139
+    },
+    {
+      "tick": 720,
+      "stored": 161,
+      "harvested": 163
+    },
+    {
+      "tick": 840,
+      "stored": 184,
+      "harvested": 186
+    },
+    {
+      "tick": 960,
+      "stored": 208,
+      "harvested": 209
+    },
+    {
+      "tick": 1080,
+      "stored": 233,
+      "harvested": 235
+    }
+  ]
+}

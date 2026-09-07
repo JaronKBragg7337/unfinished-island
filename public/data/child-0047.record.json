@@ -1,0 +1,228 @@
+{
+  "diagnostics": {
+    "seed": 17,
+    "ticks": 720,
+    "stored": 165,
+    "harvested": 166,
+    "carried": 1,
+    "ruleHits": [
+      1830,
+      2205,
+      200,
+      85
+    ],
+    "warnings": []
+  },
+  "attemptCount": 2,
+  "revision": {
+    "of": "child-0023",
+    "training": [
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 17,
+          "stored": 165,
+          "harvested": 166,
+          "meanEnergy": 21.04
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 17,
+          "stored": 165,
+          "harvested": 166,
+          "meanEnergy": 28.48
+        }
+      },
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 83,
+          "stored": 158,
+          "harvested": 160,
+          "meanEnergy": 22.85
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 83,
+          "stored": 161,
+          "harvested": 162,
+          "meanEnergy": 28.94
+        }
+      },
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 211,
+          "stored": 163,
+          "harvested": 165,
+          "meanEnergy": 3.81
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 211,
+          "stored": 162,
+          "harvested": 163,
+          "meanEnergy": 29.59
+        }
+      }
+    ],
+    "holdout": [
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 401,
+          "stored": 162,
+          "harvested": 164,
+          "meanEnergy": 23.8
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 401,
+          "stored": 165,
+          "harvested": 166,
+          "meanEnergy": 28.94
+        }
+      },
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 809,
+          "stored": 160,
+          "harvested": 161,
+          "meanEnergy": 29.09
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 809,
+          "stored": 157,
+          "harvested": 158,
+          "meanEnergy": 29.21
+        }
+      },
+      {
+        "candidate": {
+          "ticks": 720,
+          "seed": 1543,
+          "stored": 163,
+          "harvested": 165,
+          "meanEnergy": 16.55
+        },
+        "parent": {
+          "ticks": 720,
+          "seed": 1543,
+          "stored": 163,
+          "harvested": 163,
+          "meanEnergy": 29.25
+        }
+      }
+    ],
+    "trainingDelta": -2,
+    "holdoutDelta": 0,
+    "adopted": false,
+    "reason": "Previous policy retained: requires improvement in both groups and no holdout regression."
+  },
+  "id": "child-0047",
+  "parentId": "island-0001",
+  "terminalId": "island-0001/workstation-01",
+  "created": "2026-09-07T14:06:11.336Z",
+  "author": "Mara / qwen3.5:4b",
+  "assignment": "Explicitly assigned child-world experiment",
+  "name": "Mara's Efficient Cycler",
+  "hypothesis": "Placing 'always' (explore) last ensures subsequent specific rules trigger correctly without being shadowed, enabling a functional loop of gathering and depositing to accumulate food.",
+  "hash": "96cd3e44cc731dba45455523cbf9b748292e36de8be2bdac13f10d71a9e168bd",
+  "source": "child-0047.island.json",
+  "snapshot": "child-0047.snapshot.json",
+  "results": [
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 165,
+        "harvested": 166,
+        "meanEnergy": 21.04
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 17,
+        "stored": 0,
+        "harvested": 18,
+        "meanEnergy": 91.67
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 158,
+        "harvested": 160,
+        "meanEnergy": 22.85
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 83,
+        "stored": 0,
+        "harvested": 18,
+        "meanEnergy": 91.05
+      }
+    },
+    {
+      "candidate": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 163,
+        "harvested": 165,
+        "meanEnergy": 3.81
+      },
+      "baseline": {
+        "ticks": 720,
+        "seed": 211,
+        "stored": 0,
+        "harvested": 18,
+        "meanEnergy": 84.23
+      }
+    }
+  ],
+  "prompt": "You are Mara. You are explicitly assigned to improve the ordered foraging rules of your existing world child-0023. The environment is FIXED. Return JSON with EXACTLY three keys: name (1..70 characters), hypothesis (max800 characters), rules (1..8 objects {when,do}). Do not return environment fields. Allowed conditions: always,carrying,tired,foodNear. Actions: gather,deposit,rest,explore. First matching rule wins; include always. carrying means cargo>0 (capacity3); tired means energy<28. gather moves toward nearest nonempty patch and harvests; deposit returns home and stores cargo; rest restores4 energy per step; movement costs0.8 per metre. Score is deposited food after720 steps. Parent program (hypothesis is unverified text): {\"language\":\"island/1\",\"name\":\"Mara's Cache Optimization\",\"hypothesis\":\"Forcing mandatory deposit on every return trip combined with a fixed rest interval before re-gathering will increase total stored food by 40% compared to the baseline by eliminating energy waste from unnecessary travel.\",\"seed\":529,\"population\":6,\"speed\":1.1,\"sense\":12,\"food\":[[-6,3],[7,-5],[-3,9],[-9,-2],[11,4],[-15,-7]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}. Parent execution: {\"seed\":17,\"ticks\":720,\"stored\":165,\"harvested\":166,\"carried\":1,\"ruleHits\":[1513,678,1865,264],\"warnings\":[]}. Previous revision evidence: [{\"id\":\"child-0040\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0043\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0045\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0046\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"No deposit action exists. Gathering never automatically deposits cargo.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}}]. Propose a specific rule change based on evidence. Your proposed world remains in history even if it performs worse. Only measured improvement can replace the previous policy. A new name is not an improvement.",
+  "raw": "{\n\"name\": \"Mara's Efficient Cycler\",\n\"hypothesis\": \"Placing 'always' (explore) last ensures subsequent specific rules trigger correctly without being shadowed, enabling a functional loop of gathering and depositing to accumulate food.\",\n\"rules\": [\n{\n\"when\": \"carrying\",\n\"do\": \"deposit\"\n},\n{\n\"when\": \"foodNear\",\n\"do\": \"gather\"\n},\n{\n\"when\": \"tired\",\n\"do\": \"rest\"\n},\n{\n\"when\": \"always\",\n\"do\": \"explore\"\n}\n]\n}",
+  "attempts": [
+    {
+      "prompt": "You are Mara. You are explicitly assigned to improve the ordered foraging rules of your existing world child-0023. The environment is FIXED. Return JSON with EXACTLY three keys: name (1..70 characters), hypothesis (max800 characters), rules (1..8 objects {when,do}). Do not return environment fields. Allowed conditions: always,carrying,tired,foodNear. Actions: gather,deposit,rest,explore. First matching rule wins; include always. carrying means cargo>0 (capacity3); tired means energy<28. gather moves toward nearest nonempty patch and harvests; deposit returns home and stores cargo; rest restores4 energy per step; movement costs0.8 per metre. Score is deposited food after720 steps. Parent program (hypothesis is unverified text): {\"language\":\"island/1\",\"name\":\"Mara's Cache Optimization\",\"hypothesis\":\"Forcing mandatory deposit on every return trip combined with a fixed rest interval before re-gathering will increase total stored food by 40% compared to the baseline by eliminating energy waste from unnecessary travel.\",\"seed\":529,\"population\":6,\"speed\":1.1,\"sense\":12,\"food\":[[-6,3],[7,-5],[-3,9],[-9,-2],[11,4],[-15,-7]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}. Parent execution: {\"seed\":17,\"ticks\":720,\"stored\":165,\"harvested\":166,\"carried\":1,\"ruleHits\":[1513,678,1865,264],\"warnings\":[]}. Previous revision evidence: [{\"id\":\"child-0040\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0043\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0045\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0046\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"No deposit action exists. Gathering never automatically deposits cargo.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}}]. Propose a specific rule change based on evidence. Your proposed world remains in history even if it performs worse. Only measured improvement can replace the previous policy. A new name is not an improvement.",
+      "raw": "{\n\"name\": \"Mara's Greedy Accumulator\",\n\"hypothesis\": \"Adding a mandatory 'deposit' action to the rule set after gathering eliminates energy waste from unnecessary travel back home, allowing the agent to harvest food and return for multiple cycles within 720 steps, whereas the previous conditional logic caused zero storage due to immediate abandonment of cargo.\",\n\"rules\": [\n{\n\"when\": \"always\",\n\"do\": \"explore\"\n},\n{\n\"when\": \"carrying\",\n\"do\": \"deposit\"\n},\n{\n\"when\": \"foodNear\",\n\"do\": \"gather\"\n},\n{\n\"when\": \"tired\",\n\"do\": \"rest\"\n}\n]\n}",
+      "diagnostics": {
+        "seed": 17,
+        "ticks": 720,
+        "stored": 0,
+        "harvested": 0,
+        "carried": 0,
+        "ruleHits": [
+          4320,
+          0,
+          0,
+          0
+        ],
+        "warnings": [
+          "Rule 1 is unconditional: all rules after it are unreachable.",
+          "Executed 720 steps with seed 17 and delivered zero food."
+        ]
+      }
+    },
+    {
+      "prompt": "You are Mara. You are explicitly assigned to improve the ordered foraging rules of your existing world child-0023. The environment is FIXED. Return JSON with EXACTLY three keys: name (1..70 characters), hypothesis (max800 characters), rules (1..8 objects {when,do}). Do not return environment fields. Allowed conditions: always,carrying,tired,foodNear. Actions: gather,deposit,rest,explore. First matching rule wins; include always. carrying means cargo>0 (capacity3); tired means energy<28. gather moves toward nearest nonempty patch and harvests; deposit returns home and stores cargo; rest restores4 energy per step; movement costs0.8 per metre. Score is deposited food after720 steps. Parent program (hypothesis is unverified text): {\"language\":\"island/1\",\"name\":\"Mara's Cache Optimization\",\"hypothesis\":\"Forcing mandatory deposit on every return trip combined with a fixed rest interval before re-gathering will increase total stored food by 40% compared to the baseline by eliminating energy waste from unnecessary travel.\",\"seed\":529,\"population\":6,\"speed\":1.1,\"sense\":12,\"food\":[[-6,3],[7,-5],[-3,9],[-9,-2],[11,4],[-15,-7]],\"rules\":[{\"when\":\"carrying\",\"do\":\"deposit\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"always\",\"do\":\"explore\"}]}. Parent execution: {\"seed\":17,\"ticks\":720,\"stored\":165,\"harvested\":166,\"carried\":1,\"ruleHits\":[1513,678,1865,264],\"warnings\":[]}. Previous revision evidence: [{\"id\":\"child-0040\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0043\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0045\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"},{\"when\":\"carrying\",\"do\":\"deposit\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}},{\"id\":\"child-0046\",\"rules\":[{\"when\":\"always\",\"do\":\"explore\"},{\"when\":\"foodNear\",\"do\":\"gather\"},{\"when\":\"tired\",\"do\":\"rest\"}],\"training\":[{\"candidate\":{\"ticks\":720,\"seed\":17,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.56},\"parent\":{\"ticks\":720,\"seed\":17,\"stored\":165,\"harvested\":166,\"meanEnergy\":28.48}},{\"candidate\":{\"ticks\":720,\"seed\":83,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":83,\"stored\":161,\"harvested\":162,\"meanEnergy\":28.94}},{\"candidate\":{\"ticks\":720,\"seed\":211,\"stored\":0,\"harvested\":0,\"meanEnergy\":1.41},\"parent\":{\"ticks\":720,\"seed\":211,\"stored\":162,\"harvested\":163,\"meanEnergy\":29.59}}],\"adopted\":false,\"diagnostics\":{\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"No deposit action exists. Gathering never automatically deposits cargo.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}}]. Propose a specific rule change based on evidence. Your proposed world remains in history even if it performs worse. Only measured improvement can replace the previous policy. A new name is not an improvement.\nYour previous proposal was executed. Its response: {\n\"name\": \"Mara's Greedy Accumulator\",\n\"hypothesis\": \"Adding a mandatory 'deposit' action to the rule set after gathering eliminates energy waste from unnecessary travel back home, allowing the agent to harvest food and return for multiple cycles within 720 steps, whereas the previous conditional logic caused zero storage due to immediate abandonment of cargo.\",\n\"rules\": [\n{\n\"when\": \"always\",\n\"do\": \"explore\"\n},\n{\n\"when\": \"carrying\",\n\"do\": \"deposit\"\n},\n{\n\"when\": \"foodNear\",\n\"do\": \"gather\"\n},\n{\n\"when\": \"tired\",\n\"do\": \"rest\"\n}\n]\n}\nObserved diagnostics: {\"seed\":17,\"ticks\":720,\"stored\":0,\"harvested\":0,\"carried\":0,\"ruleHits\":[4320,0,0,0],\"warnings\":[\"Rule 1 is unconditional: all rules after it are unreachable.\",\"Executed 720 steps with seed 17 and delivered zero food.\"]}\nRepair this proposal using the same JSON schema. Rule-hit counts are in source order. First matching rule wins. An always rule belongs last. There is no automatic gathering or depositing beyond explicit actions. Keep a reachable deposit action and a reachable gather action. Hypotheses are unverified; base your correction on the execution counts. This is your one repair attempt.",
+      "raw": "{\n\"name\": \"Mara's Efficient Cycler\",\n\"hypothesis\": \"Placing 'always' (explore) last ensures subsequent specific rules trigger correctly without being shadowed, enabling a functional loop of gathering and depositing to accumulate food.\",\n\"rules\": [\n{\n\"when\": \"carrying\",\n\"do\": \"deposit\"\n},\n{\n\"when\": \"foodNear\",\n\"do\": \"gather\"\n},\n{\n\"when\": \"tired\",\n\"do\": \"rest\"\n},\n{\n\"when\": \"always\",\n\"do\": \"explore\"\n}\n]\n}",
+      "diagnostics": {
+        "seed": 17,
+        "ticks": 720,
+        "stored": 165,
+        "harvested": 166,
+        "carried": 1,
+        "ruleHits": [
+          1830,
+          2205,
+          200,
+          85
+        ],
+        "warnings": []
+      }
+    }
+  ]
+}
