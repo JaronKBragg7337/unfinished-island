@@ -1,7 +1,7 @@
 {
   "version": 1,
   "origin": "2026-09-05T19:49:43.573Z",
-  "cycles": 36,
+  "cycles": 37,
   "children": [
     {
       "id": "child-0001",
@@ -65,8 +65,8 @@
           }
         }
       ],
-      "tick": 13680,
-      "stored": 3424
+      "tick": 14040,
+      "stored": 3513
     },
     {
       "id": "child-0002",
@@ -130,8 +130,8 @@
           }
         }
       ],
-      "tick": 13320,
-      "stored": 2145
+      "tick": 13680,
+      "stored": 2203
     },
     {
       "id": "child-0003",
@@ -195,8 +195,8 @@
           }
         }
       ],
-      "tick": 12960,
-      "stored": 2234
+      "tick": 13320,
+      "stored": 2296
     },
     {
       "id": "child-0004",
@@ -260,8 +260,8 @@
           }
         }
       ],
-      "tick": 12600,
-      "stored": 1692
+      "tick": 12960,
+      "stored": 1740
     },
     {
       "id": "child-0005",
@@ -325,8 +325,8 @@
           }
         }
       ],
-      "tick": 12240,
-      "stored": 1474
+      "tick": 12600,
+      "stored": 1517
     },
     {
       "id": "child-0006",
@@ -390,8 +390,8 @@
           }
         }
       ],
-      "tick": 11880,
-      "stored": 2068
+      "tick": 12240,
+      "stored": 2128
     },
     {
       "id": "child-0007",
@@ -455,8 +455,8 @@
           }
         }
       ],
-      "tick": 11520,
-      "stored": 1526
+      "tick": 11880,
+      "stored": 1573
     },
     {
       "id": "child-0008",
@@ -520,8 +520,8 @@
           }
         }
       ],
-      "tick": 11160,
-      "stored": 2230
+      "tick": 11520,
+      "stored": 2300
     },
     {
       "id": "child-0009",
@@ -585,8 +585,8 @@
           }
         }
       ],
-      "tick": 10800,
-      "stored": 2196
+      "tick": 11160,
+      "stored": 2268
     },
     {
       "id": "child-0010",
@@ -650,8 +650,8 @@
           }
         }
       ],
-      "tick": 10440,
-      "stored": 2123
+      "tick": 10800,
+      "stored": 2194
     },
     {
       "id": "child-0012",
@@ -715,8 +715,8 @@
           }
         }
       ],
-      "tick": 9720,
-      "stored": 962
+      "tick": 10080,
+      "stored": 999
     },
     {
       "id": "child-0013",
@@ -780,8 +780,8 @@
           }
         }
       ],
-      "tick": 9360,
-      "stored": 2150
+      "tick": 9720,
+      "stored": 2227
     },
     {
       "id": "child-0014",
@@ -845,8 +845,8 @@
           }
         }
       ],
-      "tick": 9000,
-      "stored": 1165
+      "tick": 9360,
+      "stored": 1205
     },
     {
       "id": "child-0016",
@@ -910,8 +910,8 @@
           }
         }
       ],
-      "tick": 8280,
-      "stored": 1314
+      "tick": 8640,
+      "stored": 1371
     },
     {
       "id": "child-0017",
@@ -975,8 +975,8 @@
           }
         }
       ],
-      "tick": 7920,
-      "stored": 1600
+      "tick": 8280,
+      "stored": 1667
     },
     {
       "id": "child-0018",
@@ -1040,8 +1040,8 @@
           }
         }
       ],
-      "tick": 7560,
-      "stored": 904
+      "tick": 7920,
+      "stored": 948
     },
     {
       "id": "child-0019",
@@ -1105,8 +1105,8 @@
           }
         }
       ],
-      "tick": 7200,
-      "stored": 1455
+      "tick": 7560,
+      "stored": 1525
     },
     {
       "id": "child-0020",
@@ -1170,8 +1170,8 @@
           }
         }
       ],
-      "tick": 6840,
-      "stored": 1400
+      "tick": 7200,
+      "stored": 1472
     },
     {
       "id": "child-0021",
@@ -1235,8 +1235,8 @@
           }
         }
       ],
-      "tick": 6480,
-      "stored": 1147
+      "tick": 6840,
+      "stored": 1207
     },
     {
       "id": "child-0022",
@@ -1300,8 +1300,8 @@
           }
         }
       ],
-      "tick": 6120,
-      "stored": 872
+      "tick": 6480,
+      "stored": 921
     },
     {
       "id": "child-0023",
@@ -1365,8 +1365,8 @@
           }
         }
       ],
-      "tick": 5760,
-      "stored": 1171
+      "tick": 6120,
+      "stored": 1243
     },
     {
       "revision": {
@@ -1537,7 +1537,7 @@
           }
         }
       ],
-      "tick": 5400,
+      "tick": 5760,
       "stored": 0
     },
     {
@@ -1709,7 +1709,7 @@
           }
         }
       ],
-      "tick": 5040,
+      "tick": 5400,
       "stored": 0
     },
     {
@@ -1881,7 +1881,7 @@
           }
         }
       ],
-      "tick": 4680,
+      "tick": 5040,
       "stored": 0
     },
     {
@@ -2053,7 +2053,7 @@
           }
         }
       ],
-      "tick": 4320,
+      "tick": 4680,
       "stored": 0
     },
     {
@@ -2225,7 +2225,7 @@
           }
         }
       ],
-      "tick": 3960,
+      "tick": 4320,
       "stored": 0
     },
     {
@@ -2397,7 +2397,7 @@
           }
         }
       ],
-      "tick": 3240,
+      "tick": 3600,
       "stored": 0
     },
     {
@@ -2569,7 +2569,7 @@
           }
         }
       ],
-      "tick": 2880,
+      "tick": 3240,
       "stored": 0
     },
     {
@@ -2741,7 +2741,7 @@
           }
         }
       ],
-      "tick": 2520,
+      "tick": 2880,
       "stored": 0
     },
     {
@@ -2913,7 +2913,7 @@
           }
         }
       ],
-      "tick": 2160,
+      "tick": 2520,
       "stored": 0
     },
     {
@@ -3085,7 +3085,7 @@
           }
         }
       ],
-      "tick": 1800,
+      "tick": 2160,
       "stored": 0
     },
     {
@@ -3257,7 +3257,7 @@
           }
         }
       ],
-      "tick": 1440,
+      "tick": 1800,
       "stored": 0
     },
     {
@@ -3429,7 +3429,7 @@
           }
         }
       ],
-      "tick": 1080,
+      "tick": 1440,
       "stored": 0
     }
   ],
@@ -3901,14 +3901,25 @@
       "at": "2026-09-07T02:06:33.307Z",
       "type": "world-advanced",
       "message": "Committed 360 additional steps to 33 child worlds."
+    },
+    {
+      "at": "2026-09-07T04:42:09.791Z",
+      "type": "experiment-failed",
+      "id": "child-0037",
+      "message": "Invalid rule"
+    },
+    {
+      "at": "2026-09-07T04:42:09.791Z",
+      "type": "world-advanced",
+      "message": "Committed 360 additional steps to 33 child worlds."
     }
   ],
   "parent": {
     "id": "island-0001",
-    "age": 12960,
+    "age": 13320,
     "structures": []
   },
-  "updated": "2026-09-07T02:06:33.307Z",
-  "nextExpected": "2026-09-07T03:06:41.141Z",
+  "updated": "2026-09-07T04:42:09.791Z",
+  "nextExpected": "2026-09-07T05:42:22.442Z",
   "policyChampionId": "child-0023"
 }
